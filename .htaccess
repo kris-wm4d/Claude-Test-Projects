@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+Options -Indexes
+
+# Block hidden files, docs and logs from the web.
+<FilesMatch "(^\.|\.(md|log|json|tmp)$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+
+# Keep the admin dashboard out of search engines.
+<IfModule mod_headers.c>
+  <Files "admin.php">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </Files>
+</IfModule>
