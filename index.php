@@ -1,0 +1,286 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__ . '/inc/bootstrap.php';
+send_page_headers();
+?><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title><?= e(s('office_name')) ?> | Dental Care for the Whole Family</title>
+<meta name="description" content="<?= e(s('office_name')) ?> provides dental implants, dentures, bridges and family dentistry. Call <?= e(s('phone_display')) ?> to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<style>html, body { margin: 0 } img { max-width: 100% } [hidden] { display: none !important }</style>
+</head>
+<body>
+<div class="masthead"><div class="wrap mh">
+  <span class="mh-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Most PPO plans accepted</span>
+  <span class="mh-item mh-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Monthly payment plans available</span>
+  <a class="mh-link" href="financing.php">View My Options <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></div>
+
+<header class="site">
+  <div class="wrap hdr">
+    <a class="logo" href="#top" aria-label="Home"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <nav class="main" aria-label="Main">
+      <a href="#top" aria-current="page">Home</a><a href="#welcome">About</a><a href="#services">Implants</a><a href="#services">Cosmetic</a><a href="#services">General</a><a href="#reviews">Testimonials</a><a href="#results">Gallery</a><a href="#visit">Contact Us</a>
+    </nav>
+    <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
+    <button class="btn btn-gold" data-open>Book Appointment</button>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
+    <a href="#top">Home</a><a href="#welcome">About</a><a href="#services">Implants</a><a href="#services">Cosmetic</a><a href="#services">General</a><a href="#reviews">Testimonials</a><a href="#results">Gallery</a><a href="financing.php">Financing</a><a href="#visit">Contact Us</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Thank you for visiting</p>
+        <h1>Creating beautiful &amp; <em>healthy smiles</em></h1>
+        <p class="lede"><?= e(s('office_name')) ?> is a premier dental clinic providing high-quality care for patients of all ages, from routine cleanings to dental implants, in a relaxed office where every option is explained before treatment begins.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call Us Now</a>
+          <button class="btn btn-royal" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
+          <a class="btn btn-line" href="<?= e(sms_href()) ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text Us</a>
+        </div>
+        <div class="trust">
+          <div><b>23+</b>years of experience</div>
+          <div><b>All ages</b>kids, adults &amp; seniors</div>
+          <div><b>Same week</b>new patient visits</div>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="frame"><img src="assets/hero.webp" alt="Smiling woman with healthy teeth seated in a dental chair" width="720" height="720"></div>
+        <div class="chip a"><b>4.9</b><div><div class="stars" aria-label="5 stars">★★★★★</div>Google reviews</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section class="band tint" id="welcome">
+    <div class="wrap welcome">
+      <div style="display:grid;gap:16px">
+        <p class="eyebrow">Welcome to</p>
+        <h2><?= e(s('office_name')) ?></h2>
+      </div>
+      <div class="copy">
+        <p><?= e(s('office_name')) ?> is a premier dental clinic committed to providing high-quality dental care to patients of all ages. Our goal is to help every patient reach and keep a healthy, confident smile.</p>
+        <p>We use state-of-the-art technology, including digital X-rays and 3D imaging, and our friendly, knowledgeable staff will walk you through your options and their cost before any treatment starts.</p>
+        <a class="link" href="#visit">Learn more about our office</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="band" id="services">
+    <div class="wrap">
+      <div class="svc-head">
+        <div><p class="eyebrow">Our services</p><h2>Complete care under one roof</h2></div>
+        <button class="btn btn-royal" data-open>Book a Consultation</button>
+      </div>
+      <div class="svc">
+        <article class="tint">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M7 4c0-1.5 1.5-2 3-1.5.8.3 1.3.5 2 .5s1.2-.2 2-.5c1.5-.5 3 0 3 1.5 0 2.5-1 3.5-1 6H8c0-2.5-1-3.5-1-6z"/><path d="M9 10h6M10 13h4M10 16h4M11 19h2"/></svg></div>
+          <h3>Dental Implants</h3>
+          <p>Permanent replacements for missing teeth: a titanium post and a custom crown that looks and bites like a natural tooth.</p>
+          <a class="link" href="#services">Learn more</a>
+        </article>
+        <article class="tint">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 9c3-3 15-3 18 0-1 6-4 9-9 9S4 15 3 9z"/><path d="M7 10v3M10 10.5v3.5M14 10.5v3.5M17 10v3"/></svg></div>
+          <h3>Dentures</h3>
+          <p>Full and partial dentures, relines and repairs, plus implant-supported dentures that stay secure while you eat and speak.</p>
+          <a class="link" href="#services">Learn more</a>
+        </article>
+        <article class="tint">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 8h18v4H3z"/><path d="M5 12v6M19 12v6M10 12v3M14 12v3"/></svg></div>
+          <h3>Bridges</h3>
+          <p>Close the gap left by a missing tooth with a fixed bridge anchored to neighboring teeth or implants. No removable parts.</p>
+          <a class="link" href="#services">Learn more</a>
+        </article>
+        <article class="tint">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 10l3 2 3-4 4 3"/></svg></div>
+          <h3>Technology</h3>
+          <p>Digital X-rays with less radiation, intraoral cameras, and 3D CBCT scans for precise, guided implant planning.</p>
+          <a class="link" href="#services">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section class="band tint">
+    <div class="wrap doc">
+      <div class="slot">Doctor portrait<br>square · min 800px</div>
+      <div class="copy">
+        <p class="eyebrow">Meet the doctor</p>
+        <div class="name"><h2><?= e(s('doctor_name')) ?></h2><?php if (s('doctor_credentials') !== ''): ?><p class="deg" style="margin-top:12px"><?= e(s('doctor_credentials')) ?></p><?php endif; ?></div>
+        <ul class="creds">
+          <li>23+ years of clinical experience</li>
+          <li>Advanced training in implant surgery and restoration</li>
+          <li>Member, American Dental Association</li>
+        </ul>
+        <p><?= e(s('doctor_name')) ?> plans every case around the patient's goals and budget. She explains each step in plain language and will tell you when a simpler option will do the job.</p>
+        <a class="link" href="#visit" style="justify-self:start">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="band" id="reviews">
+    <div class="wrap">
+      <div class="rev-top">
+        <div><p class="eyebrow">Patient reviews</p><h2>What our patients say</h2></div>
+        <div class="score tint"><b>4.9</b><div><div class="stars" aria-label="5 stars">★★★★★</div>Average Google rating</div></div>
+      </div>
+      <div class="reviews">
+        <figure class="tint"><div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>I hadn't seen a dentist in years and was nervous. They showed me my X-rays, explained what was urgent, and gave me a price for each step. No pressure at all.</blockquote>
+          <figcaption><b>Patient name</b><span>Google</span></figcaption></figure>
+        <figure class="tint"><div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>My implant took about five months, exactly what they told me at the consultation. The crown matches my other teeth and I can eat normally again.</blockquote>
+          <figcaption><b>Patient name</b><span>Google</span></figcaption></figure>
+        <figure class="tint"><div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>The whole team is kind and on time. The front desk handled my insurance paperwork and my kids actually look forward to their cleanings.</blockquote>
+          <figcaption><b>Patient name</b><span>Google</span></figcaption></figure>
+      </div>
+      <p class="sample">Sample reviews for layout. Replace with verified Google reviews before launch.</p>
+      <p style="margin-top:22px"><a class="link" href="#reviews">View more reviews</a></p>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="band tint" id="results">
+    <div class="wrap res">
+      <div class="copy">
+        <p class="eyebrow">See the results</p>
+        <h2>Our work speaks for itself</h2>
+        <p class="lede">Drag the slider to compare before and after. Every case in our gallery is a real patient of this practice.</p>
+        <a class="link" href="#results" style="justify-self:start">View the gallery</a>
+      </div>
+      <div class="ba" id="ba">
+        <div class="side before">Before photo</div>
+        <div class="side after">After photo</div>
+        <span class="lbl l">Before</span><span class="lbl r">After</span>
+        <div class="handle"></div>
+        <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="Compare before and after">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="band cta">
+    <div class="wrap cta-grid">
+      <div>
+        <p class="eyebrow">Don't hesitate</p>
+        <h2>Get in touch</h2>
+        <p>Contact us to discuss any aspect of your dental health. We don't charge for giving advice.</p>
+      </div>
+      <div class="cta-actions">
+        <button class="btn btn-gold" data-open>Book Now</button>
+        <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="band" id="visit">
+    <div class="wrap visit">
+      <div class="copy">
+        <p class="eyebrow">Come see us</p>
+        <h2>Visit our office</h2>
+        <p class="addr"><?= e(s('location_line1')) ?><br><?= e(s('location_line2')) ?></p>
+        <p><a class="link" href="<?= e(s('location_url')) ?>" target="_blank" rel="noopener">Get directions</a></p>
+        <table class="hours" aria-label="Office hours"><tbody id="hours">
+          <tr data-d="1"><td>Monday</td><td>8:00 am – 5:00 pm</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>8:00 am – 5:00 pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>9:00 am – 7:00 pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>8:00 am – 5:00 pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>8:00 am – 2:00 pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>By appointment</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </tbody></table>
+      </div>
+      <div class="photos">
+        <div class="slot">Office photo 1<br>4:3</div>
+        <div class="slot">Office photo 2<br>4:3</div>
+<?php if (s('map_embed_src') !== ''): ?>
+        <div class="map map-embed"><iframe src="<?= e(s('map_embed_src')) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Map to <?= e(s('office_name')) ?>"></iframe></div>
+        <?php else: ?>
+        <a class="map" href="<?= e(s('location_url')) ?>" target="_blank" rel="noopener" aria-label="Open our location in Google Maps">
+          <svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="600" height="200" fill="#eef0f6"/>
+            <path d="M470 0h130v200H430c20-40 10-70 30-110 12-24 4-60 10-90z" fill="#cdd5ee"/>
+            <rect x="60" y="120" width="110" height="60" rx="6" fill="#d9ead9"/>
+            <g stroke="#ffffff" stroke-linecap="round">
+              <path d="M0 70h470M0 150h440M120 0v200M260 0v200M380 0v200" stroke-width="10"/>
+              <path d="M0 30h470M0 110h460M190 0v200M320 0v200M60 0v120" stroke-width="5"/>
+              <path d="M0 200L240 0" stroke-width="12"/>
+            </g>
+            <path d="M0 200L240 0" stroke="#f1d36b" stroke-width="4" stroke-linecap="round"/>
+            <g transform="translate(300 96)">
+              <ellipse cx="0" cy="26" rx="14" ry="4" fill="rgba(6,15,61,.2)"/>
+              <path d="M0 24C-14 6-20-2-20-12a20 20 0 0 1 40 0c0 10-6 18-20 36z" fill="#0a1960"/>
+              <circle cx="0" cy="-12" r="7" fill="#dfb200"/>
+            </g>
+          </svg>
+          <span class="map-cap"><b><?= e(trim(s('location_line1') . ', ' . s('location_line2'), ', ')) ?></b><span>Open in Google Maps →</span></span>
+        </a>
+        <?php endif; ?>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap ftr">
+    <a class="logo" href="#top" aria-label="Back to top"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
+    <span>© Copyright 2026</span>
+  </div>
+</footer>
+
+<div class="thumb" aria-label="Quick contact">
+  <a class="btn btn-line" href="<?= e(sms_href()) ?>">Text</a>
+  <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call</a>
+  <button class="btn btn-gold" data-open>Book</button>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlg-h">
+  <div class="m-in">
+    <div class="m-top"><h2 id="dlg-h" style="font-size:1.9rem">Request appointment</h2><button class="x" id="dlg-x" aria-label="Close">×</button></div>
+    <p class="sub">Call us now at <b><?= e(s('phone_display')) ?></b> or fill out the form below and we'll call you back.</p>
+    <form class="req" id="req" novalidate>
+      <input class="hp" type="text" name="website" id="f-website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="f">Full name<input name="name" id="f-name" required autocomplete="name"></label>
+      <div class="row2">
+        <label class="f">Phone<input name="phone" id="f-phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+        <label class="f">Email<input name="email" id="f-email" type="email" required autocomplete="email"></label>
+      </div>
+      <label class="f">Message<textarea name="message" id="f-msg" required placeholder="What can we help you with?"></textarea></label>
+      <label class="chk"><input type="checkbox" name="sms_consent" value="1" id="f-sms"><span>I agree to receive appointment reminders and updates by text from <?= e(s('office_name')) ?>. Message and data rates may apply. Reply STOP to opt out.</span></label>
+      <label class="chk"><input type="checkbox" name="marketing_consent" value="1" id="f-mkt"><span>I agree to receive occasional offers by text and email from <?= e(s('office_name')) ?>. Consent is not required to book.</span></label>
+      <?php if (recaptcha_ready()): ?><p class="help-recaptcha">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p><?php endif; ?>
+      <p class="err" id="f-err" role="alert"></p>
+      <button class="btn btn-gold" type="submit">Request Appointment</button>
+    </form>
+    <div class="done" id="done" hidden>
+      <div class="ck"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h3>Request sent</h3>
+      <p class="sub" id="done-msg">Thanks, we received your request.</p>
+      <button class="btn btn-royal" id="done-close">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script>window.SITE = <?= json_encode(['recaptchaSiteKey' => recaptcha_ready() ? s('recaptcha_site_key') : '', 'submitUrl' => 'submit.php'], JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES) ?>;</script>
+<?php if (recaptcha_ready()): ?><script src="https://www.google.com/recaptcha/api.js?render=<?= e(rawurlencode(s('recaptcha_site_key'))) ?>" async defer></script><?php endif; ?>
+<script src="assets/site.js"></script>
+</body>
+</html>

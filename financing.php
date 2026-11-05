@@ -1,0 +1,222 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__ . '/inc/bootstrap.php';
+send_page_headers();
+?><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Financing &amp; Insurance | <?= e(s('office_name')) ?></title>
+<meta name="description" content="Insurance, payment plans and financing options at <?= e(s('office_name')) ?>.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<style>html, body { margin: 0 } img { max-width: 100% } [hidden] { display: none !important }</style>
+</head>
+<body>
+<div class="masthead"><div class="wrap mh">
+  <span class="mh-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Most PPO plans accepted</span>
+  <span class="mh-item mh-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Monthly payment plans available</span>
+  <a class="mh-link" href="#estimate">View My Options <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></div>
+
+<header class="site">
+  <div class="wrap hdr">
+    <a class="logo" href="index.php" aria-label="Home"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <nav class="main" aria-label="Main">
+      <a href="index.php">Home</a><a href="index.php#welcome">About</a><a href="index.php#services">Implants</a><a href="index.php#services">Cosmetic</a><a href="index.php#services">General</a><a href="index.php#reviews">Testimonials</a><a href="index.php#results">Gallery</a><a href="index.php#visit">Contact Us</a>
+    </nav>
+    <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
+    <button class="btn btn-gold" data-open>Book Appointment</button>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
+    <a href="#top">Home</a><a href="index.php#welcome">About</a><a href="index.php#services">Implants</a><a href="index.php#services">Cosmetic</a><a href="index.php#services">General</a><a href="index.php#reviews">Testimonials</a><a href="index.php#results">Gallery</a><a href="financing.php" aria-current="page">Financing</a><a href="index.php#visit">Contact Us</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="f-hero tint">
+    <div class="wrap f-hero-grid">
+      <div>
+        <p class="eyebrow">Financing &amp; insurance</p>
+        <h1>Quality care that <em style="font-style:italic;color:var(--royal)">fits your budget</em></h1>
+        <p class="lede">Cost shouldn't keep you from a healthy smile. We accept most PPO plans, file your claims for you, and offer monthly payment options so you can start treatment now and pay over time.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-gold" data-open>Book a Free Consultation</button>
+          <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call <?= e(s('phone_display')) ?></a>
+        </div>
+      </div>
+      <ul class="f-points">
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Most PPO plans accepted</b>We verify your benefits before your visit.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg></span><span><b>Monthly payment plans</b>Spread larger treatment over 6 to 60 months, subject to credit approval.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M7 8h7a3 3 0 0 1 0 6H9"/></svg></span><span><b>Written estimate first</b>You see the full cost before any treatment begins.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Ways to pay</p><h2>Choose the option that works for you</h2></div>
+      <div class="opts">
+        <article>
+          <span class="tag">Insurance</span>
+          <h3>Dental insurance</h3>
+          <p>We're in network with most major PPO plans and will submit claims on your behalf. Out-of-network? We'll still file for you so you get every benefit you're owed.</p>
+          <div class="plans"><span>Delta Dental PPO</span><span>Cigna PPO</span><span>Aetna PPO</span><span>MetLife</span><span>Guardian</span><span>United Concordia</span></div>
+          <p class="fine">Sample plan list. Confirm the practice's in-network carriers before launch.</p>
+        </article>
+        <article>
+          <span class="tag">Financing</span>
+          <h3>Monthly payment plans</h3>
+          <p>Third-party patient financing lets you break implants, dentures and other larger treatment into predictable monthly payments.</p>
+          <ul><li>Terms from 6 to 60 months</li><li>Promotional 0% APR terms for qualified applicants</li><li>Quick application with a decision in minutes</li></ul>
+          <p class="fine">Financing is subject to credit approval by the lender. Terms and rates vary.</p>
+        </article>
+        <article>
+          <span class="tag">Tax-advantaged</span>
+          <h3>HSA &amp; FSA cards</h3>
+          <p>Use pre-tax dollars from your Health Savings Account or Flexible Spending Account for eligible dental treatment, including implants, crowns and dentures.</p>
+        </article>
+        <article>
+          <span class="tag">No insurance</span>
+          <h3>In-office savings plan</h3>
+          <p>No insurance? Join our membership plan for one yearly fee and get your preventive care covered plus savings on treatment.</p>
+          <ul><li>2 exams and cleanings per year</li><li>All routine X-rays</li><li>15% off most other treatment</li></ul>
+          <p class="fine">Sample plan details. Set the practice's real fee and benefits before launch.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band tint" id="estimate">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Payment estimator</p><h2>See what your monthly payment could be</h2></div>
+      <div class="calc">
+        <div class="calc-in">
+          <label for="c-cost"><span class="row"><span>Treatment cost</span><output class="v" id="c-cost-v" for="c-cost">$4,500</output></span>
+            <input type="range" id="c-cost" min="500" max="30000" step="250" value="4500"></label>
+          <div><p style="font-size:.82rem;font-weight:500;color:var(--ink);margin-bottom:10px">Term</p>
+            <div class="seg" id="c-term" role="group" aria-label="Term in months">
+              <button type="button" data-v="6" aria-pressed="false">6 mo</button><button type="button" data-v="12" aria-pressed="false">12 mo</button><button type="button" data-v="24" aria-pressed="true">24 mo</button><button type="button" data-v="36" aria-pressed="false">36 mo</button><button type="button" data-v="48" aria-pressed="false">48 mo</button><button type="button" data-v="60" aria-pressed="false">60 mo</button>
+            </div></div>
+          <div><p style="font-size:.82rem;font-weight:500;color:var(--ink);margin-bottom:10px">APR</p>
+            <div class="seg" id="c-apr" role="group" aria-label="Annual percentage rate">
+              <button type="button" data-v="0" aria-pressed="false">0%</button><button type="button" data-v="9.99" aria-pressed="false">9.99%</button><button type="button" data-v="17.9" aria-pressed="true">17.9%</button><button type="button" data-v="26.99" aria-pressed="false">26.99%</button>
+            </div></div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <span style="font-size:.8rem;letter-spacing:.14em;text-transform:uppercase">Estimated monthly payment</span>
+          <div class="big"><span id="c-mo">$224</span> <small>/ month</small></div>
+          <dl><dt>Amount financed</dt><dd id="c-amt">$4,500</dd><dt>Total interest</dt><dd id="c-int">$887</dd><dt>Total paid</dt><dd id="c-tot">$5,387</dd></dl>
+          <p class="fine">Estimate only, not an offer of credit. Your actual rate, term and payment depend on the lender's approval and may differ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">How it works</p><h2>From consultation to treatment</h2></div>
+      <ol class="steps">
+        <li><h3>Consultation</h3><p>We examine your teeth, explain your options, and give you a written estimate.</p></li>
+        <li><h3>Benefits check</h3><p>Our team verifies your insurance and shows what your plan covers.</p></li>
+        <li><h3>Choose how to pay</h3><p>Use insurance, HSA/FSA, a payment plan, or a mix of all three.</p></li>
+        <li><h3>Start treatment</h3><p>Once your plan is set, we schedule your first appointment.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap faq">
+      <div class="sec-head"><p class="eyebrow">Questions</p><h2>Financing FAQs</h2></div>
+      <details open><summary>Will applying for financing affect my credit?</summary><p>Many lenders offer a soft-credit prequalification that doesn't affect your score. Accepting a loan usually involves a full credit check. Ask our team which applies before you apply.</p></details>
+      <details><summary>Can I combine insurance and a payment plan?</summary><p>Yes. Insurance pays its share first, and you can finance the remaining balance.</p></details>
+      <details><summary>Do you charge for a consultation?</summary><p>We don't charge for giving advice. Call us to discuss any aspect of your dental health and your options for paying for it.</p></details>
+      <details><summary>What if I don't have insurance?</summary><p>Our in-office savings plan covers your preventive care for one yearly fee and lowers the cost of most other treatment.</p></details>
+    </div>
+  </section>
+
+  <section class="band cta">
+    <div class="wrap cta-grid">
+      <div>
+        <p class="eyebrow">Don't hesitate</p>
+        <h2>Let's find the right option for you</h2>
+        <p>Book a consultation and leave with a written treatment plan, your insurance coverage, and your payment options in hand.</p>
+      </div>
+      <div class="cta-actions">
+        <button class="btn btn-gold" data-open>Book Now</button>
+        <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap ftr">
+    <a class="logo" href="index.php" aria-label="Back to top"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
+    <span>© Copyright 2026</span>
+  </div>
+</footer>
+
+<div class="thumb" aria-label="Quick contact">
+  <a class="btn btn-line" href="<?= e(sms_href()) ?>">Text</a>
+  <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call</a>
+  <button class="btn btn-gold" data-open>Book</button>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlg-h">
+  <div class="m-in">
+    <div class="m-top"><h2 id="dlg-h" style="font-size:1.9rem">Request appointment</h2><button class="x" id="dlg-x" aria-label="Close">×</button></div>
+    <p class="sub">Call us now at <b><?= e(s('phone_display')) ?></b> or fill out the form below and we'll call you back.</p>
+    <form class="req" id="req" novalidate>
+      <input class="hp" type="text" name="website" id="f-website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="f">Full name<input name="name" id="f-name" required autocomplete="name"></label>
+      <div class="row2">
+        <label class="f">Phone<input name="phone" id="f-phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+        <label class="f">Email<input name="email" id="f-email" type="email" required autocomplete="email"></label>
+      </div>
+      <label class="f">Message<textarea name="message" id="f-msg" required placeholder="What can we help you with?"></textarea></label>
+      <label class="chk"><input type="checkbox" name="sms_consent" value="1" id="f-sms"><span>I agree to receive appointment reminders and updates by text from <?= e(s('office_name')) ?>. Message and data rates may apply. Reply STOP to opt out.</span></label>
+      <label class="chk"><input type="checkbox" name="marketing_consent" value="1" id="f-mkt"><span>I agree to receive occasional offers by text and email from <?= e(s('office_name')) ?>. Consent is not required to book.</span></label>
+      <?php if (recaptcha_ready()): ?><p class="help-recaptcha">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p><?php endif; ?>
+      <p class="err" id="f-err" role="alert"></p>
+      <button class="btn btn-gold" type="submit">Request Appointment</button>
+    </form>
+    <div class="done" id="done" hidden>
+      <div class="ck"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h3>Request sent</h3>
+      <p class="sub" id="done-msg">Thanks, we received your request.</p>
+      <button class="btn btn-royal" id="done-close">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script>window.SITE = <?= json_encode(['recaptchaSiteKey' => recaptcha_ready() ? s('recaptcha_site_key') : '', 'submitUrl' => 'submit.php'], JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES) ?>;</script>
+<?php if (recaptcha_ready()): ?><script src="https://www.google.com/recaptcha/api.js?render=<?= e(rawurlencode(s('recaptcha_site_key'))) ?>" async defer></script><?php endif; ?>
+<script src="assets/site.js"></script>
+<script>
+(() => {
+  const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+  const cost = document.getElementById('c-cost');
+  const pick = id => Number(document.querySelector('#' + id + ' [aria-pressed="true"]').dataset.v);
+  function calc() {
+    const P = Number(cost.value), n = pick('c-term'), apr = pick('c-apr'), r = apr / 1200;
+    const mo = r === 0 ? P / n : P * r / (1 - Math.pow(1 + r, -n));
+    document.getElementById('c-cost-v').textContent = fmt(P);
+    document.getElementById('c-mo').textContent = fmt(mo);
+    document.getElementById('c-amt').textContent = fmt(P);
+    document.getElementById('c-int').textContent = fmt(mo * n - P);
+    document.getElementById('c-tot').textContent = fmt(mo * n);
+  }
+  ['c-term', 'c-apr'].forEach(id => document.querySelectorAll('#' + id + ' button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('#' + id + ' button').forEach(x => x.setAttribute('aria-pressed', x === b)); calc();
+  })));
+  cost.addEventListener('input', calc); calc();
+})();
+</script>
+</body>
+</html>
