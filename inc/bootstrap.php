@@ -16,7 +16,7 @@ function defaults(): array
     return [
         // Office
         'office_name'         => 'Primary PPC',
-        'doctor_name'         => 'Dr. Elena Navarro',
+        'doctor_name'         => 'Dr. Jane Doe',
         'doctor_credentials'  => 'DMD',
         // Location
         'location_line1'      => '[Street address]',
@@ -224,6 +224,28 @@ function parse_map_embed(string $input): ?string
 }
 
 /** Basic security headers for public pages. */
+if (!function_exists('str_starts_with')) {
+    function str_starts_with(string $haystack, string $needle): bool
+    {
+        return $needle === '' || strpos($haystack, $needle) === 0;
+    }
+}
+
+if (!function_exists('str_ends_with')) {
+    function str_ends_with(string $haystack, string $needle): bool
+    {
+        $len = strlen($needle);
+        return $len === 0 || substr($haystack, -$len) === $needle;
+    }
+}
+
+if (!function_exists('str_contains')) {
+    function str_contains(string $haystack, string $needle): bool
+    {
+        return $needle !== '' && strpos($haystack, $needle) !== false;
+    }
+}
+
 function send_page_headers(): void
 {
     header('X-Content-Type-Options: nosniff');

@@ -76,6 +76,7 @@ admin.php                  settings dashboard
 submit.php                 form handler (reCAPTCHA v3 + Mailgun)
 inc/bootstrap.php          settings, escaping, sessions, validation
 inc/services.php           reCAPTCHA and Mailgun API calls
-assets/                    styles.css, site.js, logo.webp, hero.webp
+assets/                    styles.css, site.js
+Uploads/2026/              Site images and other media for 2026
 data/                      created settings + password (keep private)
 ```

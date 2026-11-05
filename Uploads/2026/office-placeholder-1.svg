@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Modern reception placeholder">
+  <defs>
+    <linearGradient id="bgRec" x1="0" x2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#dfe9ff"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7faff"/>
+      <stop offset="100%" stop-color="#e0e9fb"/>
+    </linearGradient>
+    <filter id="shadowRec" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0a1960" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgRec)"/>
+  <rect x="52" y="90" width="696" height="426" rx="26" fill="#ffffff" opacity="0.76"/>
+
+  <g opacity="0.9">
+    <rect x="110" y="120" width="322" height="210" rx="18" fill="#edf3ff"/>
+    <rect x="135" y="146" width="272" height="160" rx="16" fill="#dfe8ff"/>
+    <rect x="165" y="172" width="70" height="110" rx="12" fill="#cfe0ff"/>
+    <rect x="250" y="172" width="130" height="18" rx="9" fill="#bfd0f5"/>
+    <rect x="250" y="208" width="110" height="16" rx="8" fill="#d8e4ff"/>
+    <rect x="250" y="240" width="120" height="16" rx="8" fill="#d8e4ff"/>
+  </g>
+
+  <g filter="url(#shadowRec)">
+    <rect x="472" y="157" width="218" height="116" rx="18" fill="#101f63" opacity="0.94"/>
+    <rect x="495" y="182" width="150" height="16" rx="8" fill="#edf3ff" opacity="0.95"/>
+    <rect x="495" y="214" width="122" height="14" rx="7" fill="#dfe8ff" opacity="0.8"/>
+    <rect x="495" y="239" width="104" height="14" rx="7" fill="#dfe8ff" opacity="0.8"/>
+  </g>
+
+  <g filter="url(#shadowRec)">
+    <rect x="175" y="358" width="440" height="74" rx="24" fill="url(#deskGrad)"/>
+    <path d="M212 362h328l-38 46H255l-43-46z" fill="#ffffff" opacity="0.7"/>
+  </g>
+
+  <path d="M320 390h120l-18 52h-84l-18-52z" fill="#dfb200" opacity="0.8"/>
+  <path d="M185 444h440v18H185z" fill="#dbe3f7"/>
+
+  <circle cx="622" cy="448" r="82" fill="#e9f0ff"/>
+  <circle cx="622" cy="448" r="52" fill="#d6dff8"/>
+  <path d="M590 448h64v48h-64z" fill="#ffffff" opacity="0.85"/>
+
+  <rect x="224" y="128" width="76" height="64" rx="12" fill="#ffffff" opacity="0.48"/>
+  <rect x="240" y="142" width="44" height="34" rx="10" fill="#d9e5ff"/>
+
+  <text x="400" y="530" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#0a1960">Modern reception</text>
+</svg>

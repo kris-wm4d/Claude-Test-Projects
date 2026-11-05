@@ -24,16 +24,58 @@ send_page_headers();
 
 <header class="site">
   <div class="wrap hdr">
-    <a class="logo" href="#top" aria-label="Home"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <a class="logo" href="#top" aria-label="Home"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
     <nav class="main" aria-label="Main">
-      <a href="#top" aria-current="page">Home</a><a href="#welcome">About</a><a href="#services">Implants</a><a href="#services">Cosmetic</a><a href="#services">General</a><a href="#reviews">Testimonials</a><a href="#results">Gallery</a><a href="#visit">Contact Us</a>
+      <a href="#top" aria-current="page">Home</a>
+      <div class="nav-item">
+        <a href="#welcome">About</a>
+        <div class="subnav">
+          <a href="#doctor">Meet the Doctor</a>
+          <a href="#welcome">Meet The Team</a>
+          <a href="financing.php">Financing</a>
+          <a href="#technology">Technology</a>
+          <a href="gallery.php">Office Tour</a>
+        </div>
+      </div>
+      <a href="#services">Implants</a>
+      <a href="#services">Cosmetic</a>
+      <a href="#services">General</a>
+      <div class="nav-item">
+        <a href="#results">Results</a>
+        <div class="subnav">
+          <a href="testimonials.php">Testimonials</a>
+          <a href="gallery.php">Gallery</a>
+        </div>
+      </div>
+      <a href="#visit">Contact</a>
     </nav>
     <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
     <button class="btn btn-gold" data-open>Book Appointment</button>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
-    <a href="#top">Home</a><a href="#welcome">About</a><a href="#services">Implants</a><a href="#services">Cosmetic</a><a href="#services">General</a><a href="#reviews">Testimonials</a><a href="#results">Gallery</a><a href="financing.php">Financing</a><a href="#visit">Contact Us</a>
+    <a href="#top">Home</a>
+    <div class="drawer-group">
+      <a href="#welcome">About</a>
+      <div class="drawer-subnav">
+        <a href="#doctor">Meet the Doctor</a>
+        <a href="#welcome">Meet The Team</a>
+        <a href="financing.php">Financing</a>
+        <a href="#technology">Technology</a>
+        <a href="gallery.php">Office Tour</a>
+      </div>
+    </div>
+    <a href="#services">Implants</a>
+    <a href="#services">Cosmetic</a>
+    <a href="#services">General</a>
+    <div class="drawer-group">
+      <a href="#results">Results</a>
+      <div class="drawer-subnav">
+        <a href="testimonials.php">Testimonials</a>
+        <a href="gallery.php">Gallery</a>
+      </div>
+    </div>
+    <a href="#visit">Contact</a>
   </nav>
 </header>
 
@@ -57,7 +99,7 @@ send_page_headers();
         </div>
       </div>
       <div class="portrait">
-        <div class="frame"><img src="assets/hero.webp" alt="Smiling woman with healthy teeth seated in a dental chair" width="720" height="720"></div>
+        <div class="frame"><img src="Uploads/2026/hero.webp" alt="Smiling woman with healthy teeth seated in a dental chair" width="720" height="720"></div>
         <div class="chip a"><b>4.9</b><div><div class="stars" aria-label="5 stars">★★★★★</div>Google reviews</div></div>
       </div>
     </div>
@@ -106,7 +148,7 @@ send_page_headers();
         </article>
         <article class="tint">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 10l3 2 3-4 4 3"/></svg></div>
-          <h3>Technology</h3>
+          <h3 id="technology">Technology</h3>
           <p>Digital X-rays with less radiation, intraoral cameras, and 3D CBCT scans for precise, guided implant planning.</p>
           <a class="link" href="#services">Learn more</a>
         </article>
@@ -115,9 +157,9 @@ send_page_headers();
   </section>
 
   <!-- DOCTOR -->
-  <section class="band tint">
+  <section class="band tint" id="doctor">
     <div class="wrap doc">
-      <div class="slot">Doctor portrait<br>square · min 800px</div>
+      <div class="slot"><img src="Uploads/2026/dr-jane-doe.jpg" alt="Dr. Jane Doe portrait" width="800" height="800"></div>
       <div class="copy">
         <p class="eyebrow">Meet the doctor</p>
         <div class="name"><h2><?= e(s('doctor_name')) ?></h2><?php if (s('doctor_credentials') !== ''): ?><p class="deg" style="margin-top:12px"><?= e(s('doctor_credentials')) ?></p><?php endif; ?></div>
@@ -151,7 +193,7 @@ send_page_headers();
           <figcaption><b>Patient name</b><span>Google</span></figcaption></figure>
       </div>
       <p class="sample">Sample reviews for layout. Replace with verified Google reviews before launch.</p>
-      <p style="margin-top:22px"><a class="link" href="#reviews">View more reviews</a></p>
+      <p style="margin-top:22px"><a class="link" href="testimonials.php">View all testimonials</a></p>
     </div>
   </section>
 
@@ -162,11 +204,11 @@ send_page_headers();
         <p class="eyebrow">See the results</p>
         <h2>Our work speaks for itself</h2>
         <p class="lede">Drag the slider to compare before and after. Every case in our gallery is a real patient of this practice.</p>
-        <a class="link" href="#results" style="justify-self:start">View the gallery</a>
+        <a class="link" href="gallery.php" style="justify-self:start">View the gallery</a>
       </div>
       <div class="ba" id="ba">
-        <div class="side before">Before photo</div>
-        <div class="side after">After photo</div>
+        <img class="side before" src="Uploads/2026/ba-before.jpg" alt="Before treatment: gap between the upper front teeth" width="1620" height="960" loading="lazy" decoding="async" draggable="false">
+        <img class="side after" src="Uploads/2026/ba-after.jpg" alt="After treatment: front gap closed with even, reshaped teeth" width="1620" height="960" loading="lazy" decoding="async" draggable="false">
         <span class="lbl l">Before</span><span class="lbl r">After</span>
         <div class="handle"></div>
         <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="Compare before and after">
@@ -208,8 +250,8 @@ send_page_headers();
         </tbody></table>
       </div>
       <div class="photos">
-        <div class="slot">Office photo 1<br>4:3</div>
-        <div class="slot">Office photo 2<br>4:3</div>
+        <div class="slot gallery-card"><img src="Uploads/2026/modern-reception.jpg" alt="Modern dental reception area" width="800" height="600"></div>
+        <div class="slot gallery-card"><img src="Uploads/2026/receiving-area.jpg" alt="Dental office receiving area" width="800" height="600"></div>
 <?php if (s('map_embed_src') !== ''): ?>
         <div class="map map-embed"><iframe src="<?= e(s('map_embed_src')) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Map to <?= e(s('office_name')) ?>"></iframe></div>
         <?php else: ?>
@@ -238,9 +280,22 @@ send_page_headers();
   </section>
 </main>
 
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Expanded office image">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <div class="lightbox-image-wrap">
+      <img class="lightbox-image" src="" alt="">
+    </div>
+    <div class="lightbox-caption">
+      <span>Office gallery</span>
+      <strong id="lightbox-title">Dental office</strong>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap ftr">
-    <a class="logo" href="#top" aria-label="Back to top"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <a class="logo" href="#top" aria-label="Back to top"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
     <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
     <span>© Copyright 2026</span>
   </div>

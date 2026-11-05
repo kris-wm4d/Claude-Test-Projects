@@ -1,0 +1,1428 @@
+{
+ "url": "http://127.0.0.1:8085/testimonials.php",
+ "at": "2026-11-05T22:07:09.567Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.8,
+    0.63,
+    0.76
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 0,
+    "transitions": 19,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2260,
+     "screens": 2.5,
+     "words": 346,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 31,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "modern-reception.jpg",
+      "dr-jane-doe.jpg",
+      "treatment-room.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Patient stories",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
+     "size": 115.2,
+     "vw": 8,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.31,
+     "top": 185,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Patient stories",
+     "words": 2,
+     "lines": 2,
+     "size": 115.2,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Patient stories",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 115.2,
+      "vw": 8,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 185,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 728,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1866,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      16,
+      18,
+      53,
+      115
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.7,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 28,
+     "max": {
+      "size": 115.2,
+      "vw": 8,
+      "font": "DM Serif Display",
+      "text": "Patient stories"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 107,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 1742,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.68
+      },
+      {
+       "color": "#565c72",
+       "share": 0.08
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.07
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.07
+      },
+      {
+       "color": "#474747",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 4,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 22,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 887
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2260,
+    "margins": {
+     "left": 146,
+     "right": 146
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 107,
+      "height": 529,
+      "words": 19,
+      "media": 4,
+      "middle": 73,
+      "heading": {
+       "text": "Patient stories",
+       "size": 115,
+       "tag": "h1"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 854,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 636,
+      "height": 1106,
+      "words": 271,
+      "media": 0,
+      "middle": 66,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 1742,
+      "height": 367,
+      "words": 27,
+      "media": 0,
+      "middle": 227,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 171,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2110,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 290,
+      "heading": null,
+      "left": 160,
+      "right": 146,
+      "textLeft": 518,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Patient stories",
+      "size": 115,
+      "top": 185,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 146,
+      "n": 5
+     },
+     {
+      "x": 168,
+      "n": 2
+     },
+     {
+      "x": 461,
+      "n": 2
+     },
+     {
+      "x": 753,
+      "n": 2
+     },
+     {
+      "x": 1046,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 120,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.82,
+    0.64,
+    0.71
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 0,
+    "transitions": 19,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2448,
+     "screens": 2.4,
+     "words": 339,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 31,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "modern-reception.jpg",
+      "dr-jane-doe.jpg",
+      "treatment-room.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Patient stories",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
+     "size": 61.4,
+     "vw": 8,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.37,
+     "top": 153,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Patient stories",
+     "words": 2,
+     "lines": 2,
+     "size": 61.4,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Patient stories",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 61.4,
+      "vw": 8,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 153,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 605,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2043,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      16,
+      18,
+      34,
+      61
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.7,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 23,
+     "max": {
+      "size": 61.4,
+      "vw": 8,
+      "font": "DM Serif Display",
+      "text": "Patient stories"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 107,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 1968,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.67
+      },
+      {
+       "color": "#565c72",
+       "share": 0.08
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.07
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.07
+      },
+      {
+       "color": "#474747",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 4,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 744
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2448,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 107,
+      "height": 430,
+      "words": 19,
+      "media": 4,
+      "middle": 77,
+      "heading": {
+       "text": "Patient stories",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 504,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 537,
+      "height": 1431,
+      "words": 271,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 1968,
+      "height": 331,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 252,
+      "textLeft": 16,
+      "textRight": 252,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2298,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 84,
+      "heading": null,
+      "left": 30,
+      "right": 16,
+      "textLeft": 182,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Patient stories",
+      "size": 61,
+      "top": 153,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 5
+     },
+     {
+      "x": 291,
+      "n": 3
+     },
+     {
+      "x": 543,
+      "n": 3
+     },
+     {
+      "x": 38,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.83,
+    0.8,
+    0.91,
+    0.78,
+    0.92
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 0,
+    "transitions": 19,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3879,
+     "screens": 4.6,
+     "words": 331,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 31,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "modern-reception.jpg",
+      "treatment-room.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Patient stories",
+     "words": 2,
+     "chars": 15,
+     "lines": 1,
+     "size": 48,
+     "vw": 12.3,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 141,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Patient stories",
+     "words": 2,
+     "lines": 1,
+     "size": 48,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Patient stories",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 141,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 727,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3228,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      16,
+      18,
+      34,
+      48
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.7,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 48,
+      "vw": 12.3,
+      "font": "DM Serif Display",
+      "text": "Patient stories"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 99,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 3154,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.68
+      },
+      {
+       "color": "#565c72",
+       "share": 0.08
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.08
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.06
+      },
+      {
+       "color": "#474747",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3879,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 99,
+      "height": 574,
+      "words": 19,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Patient stories",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 673,
+      "height": 2481,
+      "words": 271,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 3154,
+      "height": 393,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3547,
+      "height": 332,
+      "words": 8,
+      "media": 0,
+      "middle": 22,
+      "heading": null,
+      "left": 16,
+      "right": 35,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Patient stories",
+      "size": 48,
+      "top": 141,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 8
+     },
+     {
+      "x": 16,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt General Sans and General Sans, but the page renders Poppins, DM Serif Display.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials-release-final\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

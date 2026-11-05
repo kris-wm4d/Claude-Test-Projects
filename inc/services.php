@@ -108,13 +108,16 @@ function send_mailgun(string $subject, string $text, ?string $replyTo = null, ?a
     if ($res['status'] === 200) {
         return [true, 'Sent.'];
     }
-    $detail = json_decode($res['body'], true)['message'] ?? ($res['error'] ?: trim(substr($res['body'], 0, 200)));
-    $hint = match ($res['status']) {
-        401     => ' Check the API key and that the region (US/EU) matches your Mailgun account.',
-        403     => ' The domain may not be verified, or a sandbox domain is sending to an unauthorized recipient.',
-        404     => ' Check the sending domain name and region.',
-        default => '',
-    };
+    $decoded = json_decode($res['body'], true);
+    $detail = is_array($decoded) && isset($decoded['message']) ? $decoded['message'] : ($res['error'] ?: trim(substr($res['body'], 0, 200)));
+    $hint = '';
+    if ($res['status'] === 401) {
+        $hint = ' Check the API key and that the region (US/EU) matches your Mailgun account.';
+    } elseif ($res['status'] === 403) {
+        $hint = ' The domain may not be verified, or a sandbox domain is sending to an unauthorized recipient.';
+    } elseif ($res['status'] === 404) {
+        $hint = ' Check the sending domain name and region.';
+    }
     return [false, 'Mailgun returned ' . ($res['status'] ?: 'no response') . ': ' . $detail . $hint];
 }
 

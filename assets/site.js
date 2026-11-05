@@ -42,8 +42,106 @@
   burger.addEventListener('click', () => { const o = drawer.hidden; drawer.hidden = !o; burger.setAttribute('aria-expanded', o); });
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { drawer.hidden = true; burger.setAttribute('aria-expanded', false); }));
 
+  const loadMore = document.getElementById('load-more');
+  if (loadMore) {
+    loadMore.addEventListener('click', () => {
+      document.querySelectorAll('#testimonial-list .testimonial-card[hidden]').forEach(card => { card.hidden = false; });
+      loadMore.hidden = true;
+    });
+  }
+
+  const revealTargets = document.querySelectorAll('.testimonials-page [data-reveal]');
+  if (revealTargets.length) {
+    const revealAll = () => revealTargets.forEach(target => target.classList.add('is-visible'));
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      revealAll();
+    } else {
+      document.documentElement.classList.add('testimonial-motion-ready');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealTargets.forEach(target => observer.observe(target));
+    }
+  }
+
   const ba = document.getElementById('ba'), range = document.getElementById('ba-range');
-  if (ba && range) range.addEventListener('input', e => ba.style.setProperty('--pos', e.target.value + '%'));
+  if (ba && range) {
+    const setPos = v => { ba.style.setProperty('--pos', v + '%'); range.value = v; };
+    range.addEventListener('input', e => ba.style.setProperty('--pos', e.target.value + '%'));
+
+    // Auto-sweep when idle; any interaction pauses it, and it resumes after IDLE ms.
+    const IDLE = 4000, PERIOD = 6000, MIN = 12, MAX = 88;
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let visible = false, hovered = false, lastTouch = 0, raf = 0, t0 = 0, phase0 = 0;
+    const idle = () => !hovered && document.activeElement !== range && Date.now() - lastTouch > IDLE;
+    const tick = now => {
+      if (!visible || !idle()) { raf = 0; return; }
+      if (!t0) {
+        // Start the sweep from wherever the handle currently sits so it never jumps.
+        const p = Math.min(Math.max(+range.value, MIN), MAX);
+        phase0 = Math.acos(1 - 2 * (p - MIN) / (MAX - MIN));
+        t0 = now;
+      }
+      const ph = phase0 + (now - t0) / PERIOD * 2 * Math.PI;
+      setPos(+(MIN + (MAX - MIN) * (1 - Math.cos(ph)) / 2).toFixed(2));
+      raf = requestAnimationFrame(tick);
+    };
+    const kick = () => { if (!raf && visible && !reduced) { t0 = 0; raf = requestAnimationFrame(tick); } };
+    const touched = () => { lastTouch = Date.now(); t0 = 0; setTimeout(kick, IDLE + 50); };
+    ['pointerdown', 'touchstart', 'keydown', 'input'].forEach(ev => range.addEventListener(ev, touched, { passive: true }));
+    ba.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') hovered = true; });
+    ba.addEventListener('pointerleave', () => { hovered = false; touched(); });
+    range.addEventListener('blur', touched);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([en]) => { visible = en.isIntersecting; kick(); }, { threshold: 0.3 }).observe(ba);
+    } else { visible = true; kick(); }
+  }
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-image') : null;
+  const lightboxTitle = lightbox ? document.getElementById('lightbox-title') : null;
+  if (lightbox && lightboxImg && lightboxTitle) {
+    let lightboxTrigger = null;
+    const closeLightbox = () => {
+      lightbox.hidden = true;
+      lightboxImg.src = '';
+      lightboxImg.alt = '';
+      document.body.style.overflow = '';
+      if (lightboxTrigger) lightboxTrigger.focus();
+    };
+
+    const openLightbox = (img, trigger) => {
+      if (!img || !img.src) return;
+      lightboxTrigger = trigger;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || 'Expanded gallery photo';
+      lightboxTitle.textContent = img.dataset.title || img.alt || 'Gallery image';
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+      lightbox.querySelector('.lightbox-close').focus();
+    };
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const img = item.querySelector('img');
+      item.addEventListener('click', () => openLightbox(img, item));
+    });
+    document.querySelectorAll('.photos .slot img').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img, img));
+    });
+
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+  }
 
   const t = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (t) t.classList.add('today');
 })();

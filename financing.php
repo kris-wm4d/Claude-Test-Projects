@@ -24,16 +24,58 @@ send_page_headers();
 
 <header class="site">
   <div class="wrap hdr">
-    <a class="logo" href="index.php" aria-label="Home"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <a class="logo" href="index.php" aria-label="Home"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
     <nav class="main" aria-label="Main">
-      <a href="index.php">Home</a><a href="index.php#welcome">About</a><a href="index.php#services">Implants</a><a href="index.php#services">Cosmetic</a><a href="index.php#services">General</a><a href="index.php#reviews">Testimonials</a><a href="index.php#results">Gallery</a><a href="index.php#visit">Contact Us</a>
+      <a href="index.php">Home</a>
+      <div class="nav-item">
+        <a href="index.php#welcome">About</a>
+        <div class="subnav">
+          <a href="index.php#doctor">Meet the Doctor</a>
+          <a href="index.php#welcome">Meet The Team</a>
+          <a href="financing.php" aria-current="page">Financing</a>
+          <a href="index.php#technology">Technology</a>
+          <a href="gallery.php">Office Tour</a>
+        </div>
+      </div>
+      <a href="index.php#services">Implants</a>
+      <a href="index.php#services">Cosmetic</a>
+      <a href="index.php#services">General</a>
+      <div class="nav-item">
+        <a href="index.php#results">Results</a>
+        <div class="subnav">
+          <a href="testimonials.php">Testimonials</a>
+          <a href="gallery.php">Gallery</a>
+        </div>
+      </div>
+      <a href="index.php#visit">Contact</a>
     </nav>
     <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
     <button class="btn btn-gold" data-open>Book Appointment</button>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
-    <a href="#top">Home</a><a href="index.php#welcome">About</a><a href="index.php#services">Implants</a><a href="index.php#services">Cosmetic</a><a href="index.php#services">General</a><a href="index.php#reviews">Testimonials</a><a href="index.php#results">Gallery</a><a href="financing.php" aria-current="page">Financing</a><a href="index.php#visit">Contact Us</a>
+    <a href="index.php">Home</a>
+    <div class="drawer-group">
+      <a href="index.php#welcome">About</a>
+      <div class="drawer-subnav">
+        <a href="index.php#doctor">Meet the Doctor</a>
+        <a href="index.php#welcome">Meet The Team</a>
+        <a href="financing.php" aria-current="page">Financing</a>
+        <a href="index.php#technology">Technology</a>
+        <a href="gallery.php">Office Tour</a>
+      </div>
+    </div>
+    <a href="index.php#services">Implants</a>
+    <a href="index.php#services">Cosmetic</a>
+    <a href="index.php#services">General</a>
+    <div class="drawer-group">
+      <a href="index.php#results">Results</a>
+      <div class="drawer-subnav">
+        <a href="testimonials.php">Testimonials</a>
+        <a href="gallery.php">Gallery</a>
+      </div>
+    </div>
+    <a href="index.php#visit">Contact</a>
   </nav>
 </header>
 
@@ -156,7 +198,7 @@ send_page_headers();
 
 <footer>
   <div class="wrap ftr">
-    <a class="logo" href="index.php" aria-label="Back to top"><img src="assets/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
+    <a class="logo" href="index.php" aria-label="Back to top"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
     <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
     <span>© Copyright 2026</span>
   </div>

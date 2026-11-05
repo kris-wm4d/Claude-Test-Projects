@@ -1,0 +1,1795 @@
+{
+ "url": "http://127.0.0.1:8085/testimonials.php",
+ "at": "2026-11-05T21:59:25.699Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.82,
+    0.64,
+    0.72
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2253,
+     "screens": 2.5,
+     "words": 370,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "modern-reception.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 63.4,
+     "vw": 4.4,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.31,
+     "top": 266,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "lines": 2,
+     "size": 63.4,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Care worth talking about",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 266,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 758,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1860,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      53,
+      63
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.9,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 30,
+     "max": {
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "text": "Care worth talking about"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.07,
+     "centerShare": 0.02,
+     "smallText": 15
+    },
+    "eyebrows": [
+     {
+      "text": "Patient stories",
+      "above": "Care worth talking about",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 230
+     },
+     {
+      "text": "Experiences across the practice",
+      "above": "What patients appreciate",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 726
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1828
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 108,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 1700,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.64
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.14
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.07
+      },
+      {
+       "color": "#474747",
+       "share": 0.06
+      },
+      {
+       "color": "#aab2d6",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.site 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 22,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 911
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 73,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2253,
+    "margins": {
+     "left": 146,
+     "right": 146
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 108,
+      "height": 526,
+      "words": 27,
+      "media": 2,
+      "middle": 90,
+      "heading": {
+       "text": "Care worth talking about",
+       "size": 63,
+       "tag": "h1"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 871,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 634,
+      "height": 1066,
+      "words": 284,
+      "media": 0,
+      "middle": 66,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 1700,
+      "height": 404,
+      "words": 30,
+      "media": 0,
+      "middle": 227,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 171,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2103,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 290,
+      "heading": null,
+      "left": 160,
+      "right": 146,
+      "textLeft": 518,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Care worth talking about",
+      "size": 63,
+      "top": 266,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 146,
+      "n": 5
+     },
+     {
+      "x": 168,
+      "n": 2
+     },
+     {
+      "x": 461,
+      "n": 2
+     },
+     {
+      "x": 753,
+      "n": 2
+     },
+     {
+      "x": 1046,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.13,
+    "voidBox": {
+     "x": 0,
+     "y": 600,
+     "w": 1440,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.85,
+    0.67,
+    0.76
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2338,
+     "screens": 2.3,
+     "words": 363,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "modern-reception.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.37,
+     "top": 190,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "lines": 2,
+     "size": 40,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Care worth talking about",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 190,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 551,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1933,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      34,
+      40
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.9,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 25,
+     "max": {
+      "size": 40,
+      "vw": 5.2,
+      "font": "DM Serif Display",
+      "text": "Care worth talking about"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 15
+    },
+    "eyebrows": [
+     {
+      "text": "Patient stories",
+      "above": "Care worth talking about",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 154
+     },
+     {
+      "text": "Experiences across the practice",
+      "above": "What patients appreciate",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 518
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1900
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 108,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 1821,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.63
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.14
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.07
+      },
+      {
+       "color": "#474747",
+       "share": 0.06
+      },
+      {
+       "color": "#aab2d6",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 3,
+     "heroLabels": [
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.site 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 8,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 683
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 73,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2338,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 108,
+      "height": 356,
+      "words": 27,
+      "media": 2,
+      "middle": 40,
+      "heading": {
+       "text": "Care worth talking about",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 467,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 464,
+      "height": 1357,
+      "words": 284,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 1821,
+      "height": 367,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 252,
+      "textLeft": 16,
+      "textRight": 252,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 2188,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 84,
+      "heading": null,
+      "left": 30,
+      "right": 16,
+      "textLeft": 182,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Care worth talking about",
+      "size": 40,
+      "top": 190,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 5
+     },
+     {
+      "x": 291,
+      "n": 3
+     },
+     {
+      "x": 543,
+      "n": 3
+     },
+     {
+      "x": 38,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.96,
+    0.71,
+    0.89,
+    0.82,
+    0.96
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3879,
+     "screens": 4.6,
+     "words": 358,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 178,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Care worth talking about",
+     "words": 4,
+     "lines": 2,
+     "size": 40,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Care worth talking about",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 178,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What patients appreciate",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 811,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3227,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      34,
+      40
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.9,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "DM Serif Display",
+      "text": "Care worth talking about"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.01,
+     "smallText": 14
+    },
+    "eyebrows": [
+     {
+      "text": "Patient stories",
+      "above": "Care worth talking about",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 142
+     },
+     {
+      "text": "Experiences across the practice",
+      "above": "What patients appreciate",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 760
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3195
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 100,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 3117,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#0e1630",
+       "share": 0.64
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.15
+      },
+      {
+       "color": "#474747",
+       "share": 0.06
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.06
+      },
+      {
+       "color": "#aab2d6",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.7,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#eaecf5"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 1.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#f8f2d9"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 5,
+     "heroLabels": [
+      "TEXT",
+      "CALL",
+      "BOOK"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site 390px",
+      "div.testimonial-card-bottom 322px",
+      "div.testimonial-card-bottom 322px",
+      "div.testimonial-card-bottom 322px",
+      "div.testimonial-card-bottom 322px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3879,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 100,
+      "height": 606,
+      "words": 27,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Care worth talking about",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.testimonial-section",
+      "tag": "section",
+      "top": 706,
+      "height": 2411,
+      "words": 284,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What patients appreciate",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 3117,
+      "height": 429,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3546,
+      "height": 332,
+      "words": 8,
+      "media": 0,
+      "middle": 22,
+      "heading": null,
+      "left": 16,
+      "right": 35,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Care worth talking about",
+      "size": 40,
+      "top": 178,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 34,
+      "n": 8
+     },
+     {
+      "x": 16,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "3 eyebrow/kicker label(s) above headings: \"Patient stories\" above \"Care worth talking about\"; \"Experiences across the practice\" above \"What patients appreciate\"; \"Your next step\" above \"Let’s talk about your smile\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hairline",
+   "width": 1440,
+   "message": "1 thin rule(s)/divider line(s): header.site 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (8 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"★★★★★\" 1.7:1 (#dfb200 on #eaecf5); \"★★★★★\" 1.7:1 (#dfb200 on #eaecf5); \"★★★★★\" 1.7:1 (#dfb200 on #eaecf5); \"★★★★★\" 1.7:1 (#dfb200 on #eaecf5)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14.9px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 2 picture(s) on the page (2 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "15 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 63.4px (4.4vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt General Sans and General Sans, but the page renders Poppins, DM Serif Display.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 390,
+   "message": "10 thin rule(s)/divider line(s): header.site 390px | div.testimonial-card-bottom 322px | div.testimonial-card-bottom 322px | div.testimonial-card-bottom 322px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 390,
+   "message": "Large text lies under another element at some scroll position: \"What patients appreciate\" (screen 1, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\testimonials\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
