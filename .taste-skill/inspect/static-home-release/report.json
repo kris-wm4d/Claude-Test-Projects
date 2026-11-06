@@ -1,0 +1,3191 @@
+{
+ "url": "http://127.0.0.1:8086/index.html",
+ "at": "2026-11-05T23:06:12.564Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.61,
+    0.63,
+    0.83,
+    0.35,
+    0.78,
+    0.42,
+    0.46
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5461,
+     "screens": 6.1,
+     "words": 505,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero.webp",
+      "dr-jane-doe.jpg",
+      "ba-before.jpg",
+      "ba-after.jpg",
+      "modern-reception.jpg",
+      "receiving-area.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 73.6,
+     "vw": 5.1,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.37,
+     "top": 316,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "lines": 2,
+     "size": 73.6,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental care for everyone",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 73.6,
+      "vw": 5.1,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 316,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "23+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 737,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "All ages",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 737,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Same week",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 737,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Primary PPC",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 1104,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Complete care under one roof",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1552,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dr. Jane Doe",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 2240,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our patients say",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 2885,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 41.6,
+      "vw": 2.9,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.04,
+      "top": 2885,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "See the difference",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 3720,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 4224,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 4609,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23,
+      24,
+      26,
+      32,
+      42,
+      53,
+      74
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.7,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 73,
+     "max": {
+      "size": 73.6,
+      "vw": 5.1,
+      "font": "DM Serif Display",
+      "text": "Dental care for everyone"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Before",
+      "After"
+     ],
+     "upperShare": 0.12,
+     "centerShare": 0,
+     "smallText": 3
+    },
+    "eyebrows": [
+     {
+      "text": "A healthier smile starts here",
+      "above": "Dental care for everyone",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 276
+     },
+     {
+      "text": "Call Us",
+      "above": "23+",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 621
+     },
+     {
+      "text": "Book Appointment",
+      "above": "All ages",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 621
+     },
+     {
+      "text": "Book Appointment",
+      "above": "Same week",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 621
+     },
+     {
+      "text": "Our services",
+      "above": "Complete care under one roof",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1520
+     },
+     {
+      "text": "Meet your dentist",
+      "above": "Dr. Jane Doe",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 2202
+     },
+     {
+      "text": "Patient stories",
+      "above": "What our patients say",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 2853
+     },
+     {
+      "text": "Smile transformations",
+      "above": "See the difference",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3686
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 4192
+     },
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 4577
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 192,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 4064,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.5
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.28
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.07
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.05
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 13.1,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 6,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "CALL US",
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.frame → rgba(10, 25, 96, 0.55) 0px 40px 70px -40px",
+      "div.chip.a → rgba(14, 22, 48, 0.35) 0px 18px 40px -18px"
+     ],
+     "gradients": 5,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "header.site 1440px",
+      "div.trust 538px",
+      "figcaption 313px",
+      "figcaption 313px",
+      "figcaption 313px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1651
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2980
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.36
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 73,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5461,
+    "margins": {
+     "left": 146,
+     "right": 146
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 108,
+      "height": 868,
+      "words": 59,
+      "media": 1,
+      "middle": 100,
+      "heading": {
+       "text": "Dental care for everyone",
+       "size": 74,
+       "tag": "h1"
+      },
+      "left": 146,
+      "right": 0,
+      "textLeft": 146,
+      "textRight": 505,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#welcome.band.tint",
+      "tag": "section",
+      "top": 976,
+      "height": 434,
+      "words": 60,
+      "media": 0,
+      "middle": 265,
+      "heading": {
+       "text": "Primary PPC",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 175,
+      "textLeft": 146,
+      "textRight": 175,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.band",
+      "tag": "section",
+      "top": 1410,
+      "height": 659,
+      "words": 87,
+      "media": 0,
+      "middle": 105,
+      "heading": {
+       "text": "Complete care under one roof",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 171,
+      "textLeft": 146,
+      "textRight": 171,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doctor.band.tint",
+      "tag": "section",
+      "top": 2069,
+      "height": 674,
+      "words": 59,
+      "media": 1,
+      "middle": 96,
+      "heading": {
+       "text": "Dr. Jane Doe",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 162,
+      "right": 164,
+      "textLeft": 680,
+      "textRight": 164,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.band",
+      "tag": "section",
+      "top": 2743,
+      "height": 734,
+      "words": 124,
+      "media": 0,
+      "middle": 62,
+      "heading": {
+       "text": "What our patients say",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 166,
+      "textLeft": 146,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.band.tint",
+      "tag": "section",
+      "top": 3477,
+      "height": 587,
+      "words": 16,
+      "media": 2,
+      "middle": 109,
+      "heading": {
+       "text": "See the difference",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 174,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#appointment.band.cta",
+      "tag": "section",
+      "top": 4064,
+      "height": 404,
+      "words": 29,
+      "media": 0,
+      "middle": 227,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 171,
+      "textLeft": 146,
+      "textRight": 171,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 4467,
+      "height": 844,
+      "words": 53,
+      "media": 4,
+      "middle": 152,
+      "heading": {
+       "text": "Visit our office",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 162,
+      "textLeft": 146,
+      "textRight": 782,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 5311,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 348,
+      "heading": null,
+      "left": 160,
+      "right": 146,
+      "textLeft": 576,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental care for everyone",
+      "size": 74,
+      "top": 316,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 146,
+      "n": 9
+     },
+     {
+      "x": 172,
+      "n": 3
+     },
+     {
+      "x": 464,
+      "n": 2
+     },
+     {
+      "x": 680,
+      "n": 2
+     },
+     {
+      "x": 707,
+      "n": 2
+     },
+     {
+      "x": 756,
+      "n": 2
+     },
+     {
+      "x": 1048,
+      "n": 2
+     },
+     {
+      "x": 563,
+      "n": 1
+     },
+     {
+      "x": 953,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 120,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.64,
+    0.76,
+    0.7,
+    0.72,
+    0.47,
+    0.53,
+    0.51,
+    0.48
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7181,
+     "screens": 7,
+     "words": 498,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero.webp",
+      "dr-jane-doe.jpg",
+      "ba-before.jpg",
+      "ba-after.jpg",
+      "modern-reception.jpg",
+      "receiving-area.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 43.2,
+     "vw": 5.6,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.42,
+     "top": 194,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "lines": 2,
+     "size": 43.2,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental care for everyone",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 194,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "23+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 552,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "All ages",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 552,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Same week",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.21,
+      "top": 552,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Primary PPC",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1533,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Complete care under one roof",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 1953,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dr. Jane Doe",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3277,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our patients say",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3751,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 41.6,
+      "vw": 5.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 3824,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "See the difference",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4871,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5609,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5958,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23,
+      24,
+      26,
+      32,
+      34,
+      42,
+      43
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.7,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 92,
+     "max": {
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "DM Serif Display",
+      "text": "Dental care for everyone"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Before",
+      "After"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0,
+     "smallText": 3
+    },
+    "eyebrows": [
+     {
+      "text": "A healthier smile starts here",
+      "above": "Dental care for everyone",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 154
+     },
+     {
+      "text": "Call Us",
+      "above": "23+",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 436
+     },
+     {
+      "text": "Book Appointment",
+      "above": "All ages",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 436
+     },
+     {
+      "text": "Book Appointment",
+      "above": "Same week",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 436
+     },
+     {
+      "text": "Welcome to",
+      "above": "Primary PPC",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1514
+     },
+     {
+      "text": "Our services",
+      "above": "Complete care under one roof",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1920
+     },
+     {
+      "text": "Meet your dentist",
+      "above": "Dr. Jane Doe",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3239
+     },
+     {
+      "text": "Patient stories",
+      "above": "What our patients say",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3719
+     },
+     {
+      "text": "Smile transformations",
+      "above": "See the difference",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 4837
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5577
+     },
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5926
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 645,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#b5aa88",
+       "top": 5000,
+       "hsl": {
+        "h": 45,
+        "s": 0.23,
+        "l": 0.62
+       }
+      },
+      {
+       "color": "#d9dcee",
+       "top": 5000,
+       "hsl": {
+        "h": 231,
+        "s": 0.38,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 5000,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 5497,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.51
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.27
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.07
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.05
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 13.1,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 6,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "CALL US",
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.frame → rgba(10, 25, 96, 0.55) 0px 40px 70px -40px",
+      "div.chip.a → rgba(14, 22, 48, 0.35) 0px 18px 40px -18px"
+     ],
+     "gradients": 5,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "header.site 768px",
+      "div.trust 736px",
+      "figcaption 680px",
+      "figcaption 680px",
+      "figcaption 680px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2032
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.36
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 73,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7181,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 108,
+      "height": 1345,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Dental care for everyone",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 160,
+      "textLeft": 16,
+      "textRight": 160,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#welcome.band.tint",
+      "tag": "section",
+      "top": 1453,
+      "height": 406,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Primary PPC",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.band",
+      "tag": "section",
+      "top": 1859,
+      "height": 766,
+      "words": 87,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Complete care under one roof",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 41,
+      "textLeft": 16,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doctor.band.tint",
+      "tag": "section",
+      "top": 2625,
+      "height": 1032,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 32,
+      "textLeft": 16,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.band",
+      "tag": "section",
+      "top": 3657,
+      "height": 1118,
+      "words": 124,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "4.9",
+       "size": 42,
+       "tag": "b"
+      },
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.band.tint",
+      "tag": "section",
+      "top": 4775,
+      "height": 722,
+      "words": 16,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "See the difference",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#appointment.band.cta",
+      "tag": "section",
+      "top": 5497,
+      "height": 367,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 253,
+      "textLeft": 16,
+      "textRight": 253,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 5864,
+      "height": 1167,
+      "words": 53,
+      "media": 3,
+      "middle": 46,
+      "heading": {
+       "text": "Visit our office",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 7031,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 142,
+      "heading": null,
+      "left": 30,
+      "right": 16,
+      "textLeft": 240,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental care for everyone",
+      "size": 43,
+      "top": 194,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 13
+     },
+     {
+      "x": 42,
+      "n": 7
+     },
+     {
+      "x": 420,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.57,
+    0.88,
+    0.38,
+    0.57,
+    0.86,
+    0.38,
+    0.59,
+    0.6,
+    0.83,
+    0.81
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8156,
+     "screens": 9.7,
+     "words": 489,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero.webp",
+      "dr-jane-doe.jpg",
+      "ba-before.jpg",
+      "ba-after.jpg",
+      "modern-reception.jpg",
+      "receiving-area.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 43.2,
+     "vw": 11.1,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.83,
+     "top": 195,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental care for everyone",
+     "words": 4,
+     "lines": 2,
+     "size": 43.2,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental care for everyone",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 11.1,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 195,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "23+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 644,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "All ages",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 644,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Same week",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 717,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 1107,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Primary PPC",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1314,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Complete care under one roof",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1833,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dental implants",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2124,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Dentures",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2400,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Dental bridges",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2676,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Modern technology",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2952,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Dr. Jane Doe",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3535,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our patients say",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "4.9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 41.6,
+      "vw": 10.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 4200,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "See the difference",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5482,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let’s talk about your smile",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6006,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6387,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "[Street address] Miami, FL [ZIP]",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6437,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23,
+      24,
+      26,
+      32,
+      34,
+      42,
+      43
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 14.7,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 43.2,
+      "vw": 11.1,
+      "font": "DM Serif Display",
+      "text": "Dental care for everyone"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.004,
+     "microSamples": [
+      "Before",
+      "After"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "A healthier smile starts here",
+      "above": "Dental care for everyone",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 136
+     },
+     {
+      "text": "Book Appointment",
+      "above": "23+",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 530
+     },
+     {
+      "text": "Book Appointment",
+      "above": "All ages",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": true,
+      "size": 14.4,
+      "top": 530
+     },
+     {
+      "text": "years of experience",
+      "above": "Same week",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13.6,
+      "top": 644
+     },
+     {
+      "text": "Welcome to",
+      "above": "Primary PPC",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1296
+     },
+     {
+      "text": "Our services",
+      "above": "Complete care under one roof",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 1801
+     },
+     {
+      "text": "Meet your dentist",
+      "above": "Dr. Jane Doe",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3497
+     },
+     {
+      "text": "Patient stories",
+      "above": "What our patients say",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 4094
+     },
+     {
+      "text": "Smile transformations",
+      "above": "See the difference",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5447
+     },
+     {
+      "text": "Your next step",
+      "above": "Let’s talk about your smile",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5974
+     },
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 6355
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 806,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 4295,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 5896,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.52
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.27
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.07
+      },
+      {
+       "color": "#6b7088",
+       "share": 0.05
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 13.1,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#dfb200",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 5,
+     "heroLabels": [
+      "CALL US",
+      "BOOK APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.frame → rgba(10, 25, 96, 0.55) 0px 40px 70px -40px",
+      "div.chip.a → rgba(14, 22, 48, 0.35) 0px 18px 40px -18px"
+     ],
+     "gradients": 5,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "header.site 390px",
+      "div.trust 358px",
+      "figcaption 302px",
+      "figcaption 302px",
+      "figcaption 302px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 8,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8156,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 100,
+      "height": 1136,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Dental care for everyone",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#welcome.band.tint",
+      "tag": "section",
+      "top": 1236,
+      "height": 505,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Primary PPC",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.band",
+      "tag": "section",
+      "top": 1741,
+      "height": 1419,
+      "words": 87,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Complete care under one roof",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 48,
+      "textLeft": 16,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#doctor.band.tint",
+      "tag": "section",
+      "top": 3160,
+      "height": 874,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Dr. Jane Doe",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#reviews.band",
+      "tag": "section",
+      "top": 4034,
+      "height": 1353,
+      "words": 124,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "4.9",
+       "size": 42,
+       "tag": "b"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.band.tint",
+      "tag": "section",
+      "top": 5387,
+      "height": 509,
+      "words": 16,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "See the difference",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#appointment.band.cta",
+      "tag": "section",
+      "top": 5896,
+      "height": 399,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s talk about your smile",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 29,
+      "textLeft": 16,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 6295,
+      "height": 1554,
+      "words": 53,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Visit our office",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 7849,
+      "height": 307,
+      "words": 8,
+      "media": 0,
+      "middle": 22,
+      "heading": null,
+      "left": 16,
+      "right": 123,
+      "textLeft": 16,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental care for everyone",
+      "size": 43,
+      "top": 195,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 13
+     },
+     {
+      "x": 42,
+      "n": 11
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "10 eyebrow/kicker label(s) above headings: \"A healthier smile starts here\" above \"Dental care for everyone\"; \"Call Us\" (pill) above \"23+\"; \"Book Appointment\" (pill) above \"All ages\"; \"Book Appointment\" (pill) above \"Same week\"; \"Our services\" above \"Complete care under one roof\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "2 tiny uppercase letter-spaced label(s): \"Before\", \"After\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "5 gradient fill(s): div.slot → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg | div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg | div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "2 box-shadow(s) on elements at rest: div.frame → rgba(10, 25, 96, 0.55) 0px 40px 70px -40px | div.chip.a → rgba(14, 22, 48, 0.35) 0px 18px 40px -18px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "5 thin rule(s)/divider line(s): header.site 1440px | div.trust 538px | figcaption 313px | figcaption 313px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (4 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"★★★★★\" 2:1 (#dfb200 on #ffffff); \"★★★★★\" 2:1 (#dfb200 on #ffffff); \"★★★★★\" 2:1 (#dfb200 on #ffffff); \"★★★★★\" 2:1 (#dfb200 on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (12, 13, 14, 15, 16, 17, 23, 24, 26, 32, 42, 53, 74).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14.7px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "3 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 9 different lines (146px, 172px, 464px, 680px, 707px, 756px, 1048px); the three most used hold only 58% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 768,
+   "message": "Longest paragraph runs about 92 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\desktop-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\tablet-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\mobile-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\static-home-release\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -43,7 +43,7 @@ send_page_headers();
       <div class="nav-item">
         <a href="#results">Results</a>
         <div class="subnav">
-          <a href="testimonials.php">Testimonials</a>
+          <a href="#reviews">Testimonials</a>
           <a href="gallery.php">Gallery</a>
         </div>
       </div>
@@ -71,7 +71,7 @@ send_page_headers();
     <div class="drawer-group">
       <a href="#results">Results</a>
       <div class="drawer-subnav">
-        <a href="testimonials.php">Testimonials</a>
+        <a href="#reviews">Testimonials</a>
         <a href="gallery.php">Gallery</a>
       </div>
     </div>
@@ -193,7 +193,7 @@ send_page_headers();
           <figcaption><b>Patient name</b><span>Google</span></figcaption></figure>
       </div>
       <p class="sample">Sample reviews for layout. Replace with verified Google reviews before launch.</p>
-      <p style="margin-top:22px"><a class="link" href="testimonials.php">View all testimonials</a></p>
+      <p style="margin-top:22px"><a class="link" href="#reviews">View more reviews</a></p>
     </div>
   </section>
 

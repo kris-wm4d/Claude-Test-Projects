@@ -42,33 +42,6 @@
   burger.addEventListener('click', () => { const o = drawer.hidden; drawer.hidden = !o; burger.setAttribute('aria-expanded', o); });
   drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { drawer.hidden = true; burger.setAttribute('aria-expanded', false); }));
 
-  const loadMore = document.getElementById('load-more');
-  if (loadMore) {
-    loadMore.addEventListener('click', () => {
-      document.querySelectorAll('#testimonial-list .testimonial-card[hidden]').forEach(card => { card.hidden = false; });
-      loadMore.hidden = true;
-    });
-  }
-
-  const revealTargets = document.querySelectorAll('.testimonials-page [data-reveal]');
-  if (revealTargets.length) {
-    const revealAll = () => revealTargets.forEach(target => target.classList.add('is-visible'));
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
-      revealAll();
-    } else {
-      document.documentElement.classList.add('testimonial-motion-ready');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealTargets.forEach(target => observer.observe(target));
-    }
-  }
-
   const ba = document.getElementById('ba'), range = document.getElementById('ba-range');
   if (ba && range) {
     const setPos = v => { ba.style.setProperty('--pos', v + '%'); range.value = v; };

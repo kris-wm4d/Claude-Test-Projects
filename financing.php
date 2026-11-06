@@ -43,7 +43,7 @@ send_page_headers();
       <div class="nav-item">
         <a href="index.php#results">Results</a>
         <div class="subnav">
-          <a href="testimonials.php">Testimonials</a>
+          <a href="index.php#reviews">Testimonials</a>
           <a href="gallery.php">Gallery</a>
         </div>
       </div>
@@ -71,7 +71,7 @@ send_page_headers();
     <div class="drawer-group">
       <a href="index.php#results">Results</a>
       <div class="drawer-subnav">
-        <a href="testimonials.php">Testimonials</a>
+        <a href="index.php#reviews">Testimonials</a>
         <a href="gallery.php">Gallery</a>
       </div>
     </div>
