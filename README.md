@@ -21,6 +21,8 @@ GitHub Pages does not run PHP. The **Deploy static site to GitHub Pages** workfl
 
 To publish, set the repository's Pages build and deployment source to **GitHub Actions** in **Settings → Pages**. The static export uses the public defaults in `inc/bootstrap.php`; it does not include local `data/settings.php`. Appointment forms are replaced at runtime with a phone fallback because static hosting cannot run `submit.php`.
 
+To customize the static version, update the public defaults in `inc/bootstrap.php` before pushing. The settings dashboard is available only on PHP-enabled hosting.
+
 ## Settings
 
 | Section | Fields | Where it shows |
