@@ -83,7 +83,7 @@ send_page_headers();
   <section class="band tint gallery-head">
     <div class="wrap gallery-intro">
       <p class="eyebrow">Before &amp; After</p>
-      <h1>Witness the Transformation</h1>
+      <h1>Witness the <em class="heading-accent">Transformation</em></h1>
       <p class="lede">Every smile tells a story. See the difference personalized dental care can make, from where our patients started to the beautiful, confident smiles they have today. Real smiles, real results, and confidence restored, one patient at a time.</p>
     </div>
   </section>

@@ -15,11 +15,11 @@ A responsive dental website with a static homepage, PHP inner pages, and a passw
 3. Go to `https://yourdomain.com/admin.php` and create the admin password. Do this right after uploading: until a password exists, whoever opens admin.php first can set it.
 4. Fill in the settings and click **Save settings**.
 
-## Static homepage with PHP inner pages
+## Static GitHub homepage
 
-The build creates a static `index.html` homepage and keeps `financing.php`, `gallery.php`, and `testimonials.php` as PHP pages. The `.htaccess` file prefers `index.html` as the home page. GitHub Pages cannot run the PHP inner pages, so deploy the generated package to PHP-enabled hosting.
+GitHub Pages cannot execute PHP. Generate a static `index.html` from `index.php` with `php scripts/build-static.php` and commit it to the repository root. The menu is left unchanged; links to inner `.php` pages work only on PHP-enabled hosting.
 
-Run `php scripts/build-static.php` and upload the contents of `dist/` to a PHP-enabled web root. The static homepage uses the public defaults in `inc/bootstrap.php`; it does not include local `data/settings.php`. Appointment requests from the static homepage show a phone fallback; PHP inner pages retain their working form handler.
+The static homepage uses the public defaults in `inc/bootstrap.php`; generation stops if local `data/settings.php` exists. Appointment requests on the static homepage show a phone fallback because static hosting cannot run `submit.php`.
 
 To customize the static homepage, update the public defaults in `inc/bootstrap.php` before building. The settings dashboard is available only on PHP-enabled hosting.
 

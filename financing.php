@@ -84,7 +84,7 @@ send_page_headers();
     <div class="wrap f-hero-grid">
       <div>
         <p class="eyebrow">Financing &amp; insurance</p>
-        <h1>Quality care that <em style="font-style:italic;color:var(--royal)">fits your budget</em></h1>
+        <h1>Quality care that <em class="heading-accent">fits your budget</em></h1>
         <p class="lede">Cost shouldn't keep you from a healthy smile. We accept most PPO plans, file your claims for you, and offer monthly payment options so you can start treatment now and pay over time.</p>
         <div class="hero-ctas">
           <button class="btn btn-gold" data-open>Book a Free Consultation</button>

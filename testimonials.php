@@ -115,7 +115,7 @@ $shownTestimonials = min($initialVisible, $totalTestimonials);
   <section class="testimonials-hero">
     <div class="wrap testimonials-hero-grid">
       <div class="testimonials-intro">
-        <h1>Care, in the words of patients.</h1>
+        <h1>Care, in the <em class="heading-accent">words of patients.</em></h1>
         <p>Every visit is a conversation. Explore sample stories about thoughtful care, clear answers, and feeling welcome.</p>
       </div>
       <div class="testimonials-hero-mark">
