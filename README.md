@@ -1,6 +1,6 @@
 # Primary PPC Dental Website
 
-A responsive dental website with PHP pages, a static GitHub Pages build, and a password-protected settings dashboard at **/admin.php**.
+A responsive dental website with a static homepage, PHP inner pages, and a password-protected settings dashboard at **/admin.php**.
 
 ## Requirements
 
@@ -15,13 +15,13 @@ A responsive dental website with PHP pages, a static GitHub Pages build, and a p
 3. Go to `https://yourdomain.com/admin.php` and create the admin password. Do this right after uploading: until a password exists, whoever opens admin.php first can set it.
 4. Fill in the settings and click **Save settings**.
 
-## GitHub Pages (static site)
+## Static homepage with PHP inner pages
 
-GitHub Pages does not run PHP. The **Deploy static site to GitHub Pages** workflow renders `index.php`, `financing.php`, `gallery.php`, and `testimonials.php` into static HTML and deploys their shared assets. The PHP pages remain available for PHP-enabled hosting.
+The build creates a static `index.html` homepage and keeps `financing.php`, `gallery.php`, and `testimonials.php` as PHP pages. The `.htaccess` file prefers `index.html` as the home page. GitHub Pages cannot run the PHP inner pages, so deploy the generated package to PHP-enabled hosting.
 
-To publish, set the repository's Pages build and deployment source to **GitHub Actions** in **Settings → Pages**. The static export uses the public defaults in `inc/bootstrap.php`; it does not include local `data/settings.php`. Appointment forms are replaced at runtime with a phone fallback because static hosting cannot run `submit.php`.
+Run `php scripts/build-static.php` and upload the contents of `dist/` to a PHP-enabled web root. The static homepage uses the public defaults in `inc/bootstrap.php`; it does not include local `data/settings.php`. Appointment requests from the static homepage show a phone fallback; PHP inner pages retain their working form handler.
 
-To customize the static version, update the public defaults in `inc/bootstrap.php` before pushing. The settings dashboard is available only on PHP-enabled hosting.
+To customize the static homepage, update the public defaults in `inc/bootstrap.php` before building. The settings dashboard is available only on PHP-enabled hosting.
 
 ## Settings
 
