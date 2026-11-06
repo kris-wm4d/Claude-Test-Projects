@@ -1,6 +1,6 @@
-# PPCv4 Dental Site with Settings Dashboard
+# Primary PPC Dental Website
 
-A PHP version of the Home and Financing pages. Office details, phone, location, map, form email, reCAPTCHA v3 and Mailgun are all edited from a password-protected dashboard at **/admin.php**.
+A responsive dental website with PHP pages, a static GitHub Pages build, and a password-protected settings dashboard at **/admin.php**.
 
 ## Requirements
 
@@ -14,6 +14,12 @@ A PHP version of the Home and Financing pages. Office details, phone, location, 
 2. Make the `data` folder writable by PHP. On most cPanel hosts the default permissions already work. If the dashboard says "Data folder not writable", set `data` to `750` (or `755`) and make sure it's owned by the account PHP runs as.
 3. Go to `https://yourdomain.com/admin.php` and create the admin password. Do this right after uploading: until a password exists, whoever opens admin.php first can set it.
 4. Fill in the settings and click **Save settings**.
+
+## GitHub Pages (static site)
+
+GitHub Pages does not run PHP. The **Deploy static site to GitHub Pages** workflow renders `index.php`, `financing.php`, `gallery.php`, and `testimonials.php` into static HTML and deploys their shared assets. The PHP pages remain available for PHP-enabled hosting.
+
+To publish, set the repository's Pages build and deployment source to **GitHub Actions** in **Settings → Pages**. The static export uses the public defaults in `inc/bootstrap.php`; it does not include local `data/settings.php`. Appointment forms are replaced at runtime with a phone fallback because static hosting cannot run `submit.php`.
 
 ## Settings
 

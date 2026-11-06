@@ -1,6 +1,40 @@
 (() => {
   const dlg = document.getElementById('dlg'), form = document.getElementById('req'), done = document.getElementById('done');
-  const open = () => { form.hidden = false; done.hidden = true; document.getElementById('f-err').textContent = ''; dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); setTimeout(() => document.getElementById('f-name').focus(), 30); };
+  const staticSite = document.documentElement.dataset.staticSite === 'true';
+  let staticNotice = null;
+  const open = () => {
+    done.hidden = true;
+    document.getElementById('f-err').textContent = '';
+    const instructions = dlg.querySelector('.m-in > .sub');
+    if (staticSite) {
+      form.hidden = true;
+      if (instructions) instructions.hidden = true;
+      if (!staticNotice) {
+        staticNotice = document.createElement('p');
+        staticNotice.id = 'static-booking';
+        staticNotice.className = 'sub';
+        staticNotice.setAttribute('role', 'status');
+        staticNotice.append(document.createTextNode('Online appointment requests are unavailable on this static site. Please call us at '));
+        const phone = document.querySelector('.phone');
+        if (phone) {
+          const link = document.createElement('a');
+          link.href = phone.href;
+          link.textContent = phone.textContent.trim();
+          staticNotice.append(link);
+          staticNotice.append(document.createTextNode('.'));
+        } else {
+          staticNotice.append(document.createTextNode('the office.'));
+        }
+        form.insertAdjacentElement('afterend', staticNotice);
+      }
+      staticNotice.hidden = false;
+    } else {
+      form.hidden = false;
+      if (instructions) instructions.hidden = false;
+    }
+    dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+    if (!staticSite) setTimeout(() => document.getElementById('f-name').focus(), 30);
+  };
   const close = () => dlg.close ? dlg.close() : dlg.removeAttribute('open');
   document.querySelectorAll('[data-open]').forEach(b => b.addEventListener('click', open));
   document.getElementById('dlg-x').addEventListener('click', close);
