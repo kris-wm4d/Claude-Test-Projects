@@ -31,6 +31,9 @@ $testimonials = [
     ['name' => 'Alicia C.', 'source' => 'Facebook', 'quote' => 'From check-in to checkout, everyone was patient and kind. I never felt like just another appointment on the schedule.'],
     ['name' => 'Marcus V.', 'source' => 'Website', 'quote' => 'The visit was organized, comfortable, and easy to understand. I appreciated having time to talk through my questions.'],
 ];
+$initialVisible = 8;
+$totalTestimonials = count($testimonials);
+$shownTestimonials = min($initialVisible, $totalTestimonials);
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -115,12 +118,8 @@ $testimonials = [
         <h1>Care, in the words of patients.</h1>
         <p>Every visit is a conversation. Explore sample stories about thoughtful care, clear answers, and feeling welcome.</p>
       </div>
-      <div class="testimonials-hero-mark" aria-hidden="true">
-        <svg viewBox="0 0 220 250" fill="none">
-          <path d="M110 33C83 9 38 16 26 49 12 87 36 132 46 165c8 28 13 61 34 62 19 1 18-51 30-51s11 52 30 51c21-1 26-34 34-62 10-33 34-78 20-116C212 16 167 9 140 33c-9 8-21 8-30 0Z" fill="currentColor"/>
-          <path d="M110 33C83 9 38 16 26 49 12 87 36 132 46 165c8 28 13 61 34 62 19 1 18-51 30-51s11 52 30 51c21-1 26-34 34-62 10-33 34-78 20-116C212 16 167 9 140 33c-9 8-21 8-30 0Z" stroke="white" stroke-opacity=".45" stroke-width="3"/>
-        </svg>
-        <p>Care, made personal.</p>
+      <div class="testimonials-hero-mark">
+        <img src="Uploads/2026/testimonials-hero-family.webp" alt="Mother and daughter smiling together" width="768" height="960" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -133,7 +132,7 @@ $testimonials = [
       </div>
       <div class="testimonial-masonry" id="testimonial-list">
         <?php foreach ($testimonials as $index => $testimonial): ?>
-          <article class="testimonial-card<?= $index >= 8 ? ' is-extra' : '' ?>"<?= $index >= 8 ? ' hidden' : '' ?>>
+          <article class="testimonial-card<?= $index >= $initialVisible ? ' is-extra' : '' ?>"<?= $index >= $initialVisible ? ' hidden' : '' ?>>
             <blockquote><?= e($testimonial['quote']) ?></blockquote>
             <div class="testimonial-rating" role="img" aria-label="5 out of 5 stars">
               <?php for ($star = 0; $star < 5; $star++): ?>
@@ -141,16 +140,18 @@ $testimonials = [
               <?php endfor; ?>
             </div>
             <div class="testimonial-source">
-              <span class="source-logo source-<?= strtolower(e($testimonial['source'])) ?>" aria-hidden="true"><?= e(testimonial_source_mark($testimonial['source'])) ?></span>
+              <span class="source-logo source-<?= e(strtolower($testimonial['source'])) ?>" aria-hidden="true"><?= e(testimonial_source_mark($testimonial['source'])) ?></span>
               <span class="source-copy"><?= e($testimonial['source']) ?><small>Sample review</small></span>
               <span class="testimonial-name"><?= e($testimonial['name']) ?></span>
             </div>
           </article>
         <?php endforeach; ?>
       </div>
-      <p class="testimonial-count" id="testimonial-count" aria-live="polite">Showing 8 of 12 sample testimonials.</p>
+      <p class="testimonial-count" id="testimonial-count" aria-live="polite">Showing <?= $shownTestimonials ?> of <?= $totalTestimonials ?> sample testimonials.</p>
+      <?php if ($totalTestimonials > $initialVisible): ?>
       <button class="btn btn-royal testimonial-more" id="testimonial-more" type="button" aria-controls="testimonial-list">Load More</button>
-      <noscript><style>.testimonial-card[hidden] { display: inline-grid !important } #testimonial-more { display: none }</style></noscript>
+      <?php endif; ?>
+      <noscript><style>.testimonial-card[hidden] { display: inline-grid !important } #testimonial-more, #testimonial-count { display: none }</style></noscript>
     </div>
   </section>
 
@@ -242,9 +243,15 @@ $testimonials = [
 <script>
 (() => {
   const button = document.getElementById('testimonial-more');
-  const extraReviews = [...document.querySelectorAll('.testimonial-card.is-extra')];
   const counter = document.getElementById('testimonial-count');
-  let visible = 8;
+  const testimonialCards = [...document.querySelectorAll('.testimonial-card')];
+  const extraReviews = testimonialCards.filter(card => card.classList.contains('is-extra'));
+
+  let visible = testimonialCards.filter(card => !card.hidden).length;
+
+  const updateCounter = () => {
+    counter.textContent = `Showing ${visible} of ${testimonialCards.length} sample testimonials.`;
+  };
 
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -262,11 +269,19 @@ $testimonials = [
     });
   }
 
+  if (!button || !counter) return;
+
+  updateCounter();
+
   button.addEventListener('click', () => {
     const next = extraReviews.splice(0, 4);
-    next.forEach(review => review.hidden = false);
+    next.forEach(review => { review.hidden = false; });
     visible += next.length;
-    counter.textContent = `Showing ${visible} of 12 sample testimonials.`;
+    updateCounter();
+    if (next[0]) {
+      next[0].setAttribute('tabindex', '-1');
+      next[0].focus({ preventScroll: true });
+    }
     if (!extraReviews.length) button.hidden = true;
   });
 })();
