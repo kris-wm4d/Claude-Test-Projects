@@ -14,70 +14,10 @@ send_page_headers();
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 <style>html, body { margin: 0 } img { max-width: 100% } [hidden] { display: none !important }</style>
+<?= s('header_scripts') ?>
 </head>
 <body>
-<div class="masthead"><div class="wrap mh">
-  <span class="mh-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Most PPO plans accepted</span>
-  <span class="mh-item mh-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Monthly payment plans available</span>
-  <a class="mh-link" href="financing.php">View My Options <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-</div></div>
-
-<header class="site">
-  <div class="wrap hdr">
-    <a class="logo" href="#top" aria-label="Home"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
-    <nav class="main" aria-label="Main">
-      <a href="#top" aria-current="page">Home</a>
-      <div class="nav-item">
-        <a href="#welcome">About</a>
-        <div class="subnav">
-          <a href="#doctor">Meet the Doctor</a>
-          <a href="#welcome">Meet The Team</a>
-          <a href="financing.php">Financing</a>
-          <a href="#technology">Technology</a>
-          <a href="gallery.php">Office Tour</a>
-        </div>
-      </div>
-      <a href="#services">Implants</a>
-      <a href="#services">Cosmetic</a>
-      <a href="#services">General</a>
-      <div class="nav-item">
-        <a href="#results">Results</a>
-        <div class="subnav">
-          <a href="testimonials.php">Testimonials</a>
-          <a href="gallery.php">Gallery</a>
-        </div>
-      </div>
-      <a href="#visit">Contact</a>
-    </nav>
-    <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
-    <button class="btn btn-gold" data-open>Book Appointment</button>
-    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
-  <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
-    <a href="#top">Home</a>
-    <div class="drawer-group">
-      <a href="#welcome">About</a>
-      <div class="drawer-subnav">
-        <a href="#doctor">Meet the Doctor</a>
-        <a href="#welcome">Meet The Team</a>
-        <a href="financing.php">Financing</a>
-        <a href="#technology">Technology</a>
-        <a href="gallery.php">Office Tour</a>
-      </div>
-    </div>
-    <a href="#services">Implants</a>
-    <a href="#services">Cosmetic</a>
-    <a href="#services">General</a>
-    <div class="drawer-group">
-      <a href="#results">Results</a>
-      <div class="drawer-subnav">
-        <a href="testimonials.php">Testimonials</a>
-        <a href="gallery.php">Gallery</a>
-      </div>
-    </div>
-    <a href="#visit">Contact</a>
-  </nav>
-</header>
+<?php $site_base = ''; $site_current = 'home'; include __DIR__ . '/inc/site-header.php'; ?>
 
 <main id="top">
   <!-- HERO -->
@@ -89,8 +29,8 @@ send_page_headers();
         <p class="lede"><?= e(s('office_name')) ?> is a premier dental clinic providing high-quality care for patients of all ages, from routine cleanings to dental implants, in a relaxed office where every option is explained before treatment begins.</p>
         <div class="hero-ctas">
           <a class="btn btn-gold" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call Us Now</a>
-          <button class="btn btn-royal" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
-          <a class="btn btn-line" href="<?= e(sms_href()) ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text Us</a>
+          <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
+<!--          <a class="btn btn-line" href="<?= e(sms_href()) ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text Us</a>-->
         </div>
         <div class="trust">
           <div><b>23+</b>years of experience</div>
@@ -125,14 +65,14 @@ send_page_headers();
     <div class="wrap">
       <div class="svc-head">
         <div><p class="eyebrow">Our services</p><h2>Complete care under one roof</h2></div>
-        <button class="btn btn-royal" data-open>Book a Consultation</button>
+        <button class="btn btn-royal" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
       </div>
       <div class="svc">
         <article class="tint">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M7 4c0-1.5 1.5-2 3-1.5.8.3 1.3.5 2 .5s1.2-.2 2-.5c1.5-.5 3 0 3 1.5 0 2.5-1 3.5-1 6H8c0-2.5-1-3.5-1-6z"/><path d="M9 10h6M10 13h4M10 16h4M11 19h2"/></svg></div>
           <h3>Dental Implants</h3>
           <p>Permanent replacements for missing teeth: a titanium post and a custom crown that looks and bites like a natural tooth.</p>
-          <a class="link" href="#services">Learn more</a>
+          <a class="link" href="implants/dental-implants/">Learn more</a>
         </article>
         <article class="tint">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 9c3-3 15-3 18 0-1 6-4 9-9 9S4 15 3 9z"/><path d="M7 10v3M10 10.5v3.5M14 10.5v3.5M17 10v3"/></svg></div>
@@ -225,59 +165,12 @@ send_page_headers();
         <p>Contact us to discuss any aspect of your dental health. We don't charge for giving advice.</p>
       </div>
       <div class="cta-actions">
-        <button class="btn btn-gold" data-open>Book Now</button>
-        <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call Us</a>
+        <a class="btn btn-gold" href="<?= e(phone_href()) ?>">Call Us</a>
+        <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
       </div>
     </div>
   </section>
 
-  <!-- VISIT -->
-  <section class="band" id="visit">
-    <div class="wrap visit">
-      <div class="copy">
-        <p class="eyebrow">Come see us</p>
-        <h2>Visit our office</h2>
-        <p class="addr"><?= e(s('location_line1')) ?><br><?= e(s('location_line2')) ?></p>
-        <p><a class="link" href="<?= e(s('location_url')) ?>" target="_blank" rel="noopener">Get directions</a></p>
-        <table class="hours" aria-label="Office hours"><tbody id="hours">
-          <tr data-d="1"><td>Monday</td><td>8:00 am – 5:00 pm</td></tr>
-          <tr data-d="2"><td>Tuesday</td><td>8:00 am – 5:00 pm</td></tr>
-          <tr data-d="3"><td>Wednesday</td><td>9:00 am – 7:00 pm</td></tr>
-          <tr data-d="4"><td>Thursday</td><td>8:00 am – 5:00 pm</td></tr>
-          <tr data-d="5"><td>Friday</td><td>8:00 am – 2:00 pm</td></tr>
-          <tr data-d="6"><td>Saturday</td><td>By appointment</td></tr>
-          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
-        </tbody></table>
-      </div>
-      <div class="photos">
-        <div class="slot gallery-card"><img src="Uploads/2026/modern-reception.jpg" alt="Modern dental reception area" width="800" height="600"></div>
-        <div class="slot gallery-card"><img src="Uploads/2026/receiving-area.jpg" alt="Dental office receiving area" width="800" height="600"></div>
-<?php if (s('map_embed_src') !== ''): ?>
-        <div class="map map-embed"><iframe src="<?= e(s('map_embed_src')) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Map to <?= e(s('office_name')) ?>"></iframe></div>
-        <?php else: ?>
-        <a class="map" href="<?= e(s('location_url')) ?>" target="_blank" rel="noopener" aria-label="Open our location in Google Maps">
-          <svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="600" height="200" fill="#eef0f6"/>
-            <path d="M470 0h130v200H430c20-40 10-70 30-110 12-24 4-60 10-90z" fill="#cdd5ee"/>
-            <rect x="60" y="120" width="110" height="60" rx="6" fill="#d9ead9"/>
-            <g stroke="#ffffff" stroke-linecap="round">
-              <path d="M0 70h470M0 150h440M120 0v200M260 0v200M380 0v200" stroke-width="10"/>
-              <path d="M0 30h470M0 110h460M190 0v200M320 0v200M60 0v120" stroke-width="5"/>
-              <path d="M0 200L240 0" stroke-width="12"/>
-            </g>
-            <path d="M0 200L240 0" stroke="#f1d36b" stroke-width="4" stroke-linecap="round"/>
-            <g transform="translate(300 96)">
-              <ellipse cx="0" cy="26" rx="14" ry="4" fill="rgba(6,15,61,.2)"/>
-              <path d="M0 24C-14 6-20-2-20-12a20 20 0 0 1 40 0c0 10-6 18-20 36z" fill="#0a1960"/>
-              <circle cx="0" cy="-12" r="7" fill="#dfb200"/>
-            </g>
-          </svg>
-          <span class="map-cap"><b><?= e(trim(s('location_line1') . ', ' . s('location_line2'), ', ')) ?></b><span>Open in Google Maps →</span></span>
-        </a>
-        <?php endif; ?>
-      </div>
-    </div>
-  </section>
 </main>
 
 <div class="lightbox" id="lightbox" hidden>
@@ -293,18 +186,12 @@ send_page_headers();
   </div>
 </div>
 
-<footer>
-  <div class="wrap ftr">
-    <a class="logo" href="#top" aria-label="Back to top"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
-    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="testimonials.php">Testimonials</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
-    <span>© Copyright 2026</span>
-  </div>
-</footer>
+<?php include __DIR__ . '/inc/site-footer.php'; ?>
 
 <div class="thumb" aria-label="Quick contact">
+  <a class="btn btn-gold" href="<?= e(phone_href()) ?>">Call</a>
   <a class="btn btn-line" href="<?= e(sms_href()) ?>">Text</a>
-  <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call</a>
-  <button class="btn btn-gold" data-open>Book</button>
+  <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
 </div>
 
 <dialog id="dlg" aria-labelledby="dlg-h">
@@ -323,7 +210,7 @@ send_page_headers();
       <label class="chk"><input type="checkbox" name="marketing_consent" value="1" id="f-mkt"><span>I agree to receive occasional offers by text and email from <?= e(s('office_name')) ?>. Consent is not required to book.</span></label>
       <?php if (recaptcha_ready()): ?><p class="help-recaptcha">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p><?php endif; ?>
       <p class="err" id="f-err" role="alert"></p>
-      <button class="btn btn-gold" type="submit">Request Appointment</button>
+      <button class="btn btn-gold" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
     </form>
     <div class="done" id="done" hidden>
       <div class="ck"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
@@ -337,5 +224,7 @@ send_page_headers();
 <script>window.SITE = <?= json_encode(['recaptchaSiteKey' => recaptcha_ready() ? s('recaptcha_site_key') : '', 'submitUrl' => 'submit.php'], JSON_HEX_TAG | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES) ?>;</script>
 <?php if (recaptcha_ready()): ?><script src="https://www.google.com/recaptcha/api.js?render=<?= e(rawurlencode(s('recaptcha_site_key'))) ?>" async defer></script><?php endif; ?>
 <script src="assets/site.js"></script>
+<?= s('chat_script') ?>
+<?= s('footer_scripts') ?>
 </body>
 </html>

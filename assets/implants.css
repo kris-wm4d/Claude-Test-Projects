@@ -1,0 +1,99 @@
+.implant-page { --wrap: 1360px }
+.implant-page header.site { position: relative; top: auto; border-bottom: 0 }
+.implant-page .masthead .mh { font-size: 1rem }
+.implant-page .masthead .mh-link { font-size: inherit }
+.implant-page nav.main { font-size: 1rem }
+.implant-page .thumb { border-top: 0 }
+.implant-page .btn { font-size: 1rem }
+.implant-page .hdr .btn { font-size: 1rem }
+.implant-page .link { font-size: 1rem }
+.implant-page footer { font-size: 1rem }
+.implant-page .imp-hero { padding-block: clamp(44px, 7vw, 96px); overflow: hidden }
+.implant-page .imp-hero-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(32px, 6vw, 80px) }
+.implant-page .imp-hero-copy { max-width: 560px }
+.implant-page .imp-hero h1 { max-width: none }
+.implant-page .imp-hero .lede { margin-top: 24px; font-size: 1.125rem }
+.implant-page .imp-hero .hero-ctas { margin-top: 30px }
+.implant-page .imp-hero-note { margin-top: 20px; font-size: 1rem }
+.implant-page .imp-hero-photo { position: relative; height: min(56vw, 690px); min-height: 390px; margin: 0; overflow: hidden; border-radius: 48% 48% 18px 18px }
+.implant-page .imp-hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.1s cubic-bezier(.2,.7,.2,1) }
+html.motion-ready .implant-page .imp-hero-photo:not(.is-visible) img { transform: scale(1.045) }
+html.motion-ready .implant-page .imp-hero-photo.is-visible img { transform: scale(1) }
+.implant-page .imp-countdown { position: absolute; left: clamp(14px, 2vw, 22px); bottom: clamp(14px, 2vw, 22px); z-index: 2; display: grid; gap: 5px; min-width: 190px; padding: 14px 18px; border-radius: 12px; background: var(--white); color: var(--ink) }
+.implant-page .imp-countdown span { font-size: .875rem; line-height: 1.3 }
+.implant-page .imp-countdown time { color: var(--royal); font: 500 1.5rem/1.1 var(--body); font-variant-numeric: tabular-nums }
+.implant-page .imp-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: clamp(36px, 8vw, 110px); align-items: start }
+.implant-page .imp-section-title { max-width: 520px }
+.implant-page .imp-section-title .lede { margin-top: 20px }
+.implant-page .imp-copy { display: grid; gap: 18px; max-width: 650px }
+.implant-page .imp-copy .link { justify-self: start; margin-top: 8px }
+.implant-page .imp-options-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .75fr); gap: 48px; align-items: end; margin-bottom: 48px }
+.implant-page .imp-options-intro p { max-width: 48ch }
+.implant-page .imp-options-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px clamp(24px, 4vw, 54px) }
+.implant-page .imp-options-list article { padding-top: 20px }
+.implant-page .imp-options-list article:first-child { grid-row: span 2; align-self: stretch }
+.implant-page .imp-options-list h3 { margin-bottom: 14px }
+.implant-page .imp-treatment-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .7fr); gap: 48px; align-items: end }
+.implant-page .imp-steps { display: grid; grid-template-columns: 1fr; gap: 0; list-style: none; padding: 0; margin: 48px 0 0 }
+.implant-page .imp-steps li { display: grid; grid-template-columns: minmax(220px, .7fr) minmax(0, 1.3fr); gap: 32px; align-items: baseline; padding: 22px 0; border-top: 2px solid var(--royal-line) }
+.implant-page .imp-steps h3 { margin: 0 }
+.implant-page .imp-candidacy-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(36px, 7vw, 90px) }
+.implant-page .imp-candidacy-grid .imp-copy h2 { margin-bottom: 8px }
+.implant-page .imp-candidacy-grid .btn { justify-self: start; margin-top: 8px }
+.implant-page .imp-candidacy-photo { height: 440px; margin: 0; overflow: hidden; border-radius: 18px }
+.implant-page .imp-candidacy-photo img { width: 100%; height: 100%; object-fit: cover; display: block }
+.implant-page .imp-life-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(36px, 8vw, 100px); align-items: start }
+.implant-page .imp-gallery-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, .75fr); gap: 40px; align-items: end; margin-bottom: 42px }
+.implant-page .imp-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px }
+.implant-page .imp-gallery .gallery-item { aspect-ratio: 4 / 5; border-radius: 16px }
+.implant-page .imp-gallery .gallery-item img { object-fit: cover }
+.implant-page .imp-gallery-note { margin-top: 20px; font-size: 1rem }
+.implant-page .imp-faq-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(36px, 8vw, 100px); align-items: start }
+.implant-page .imp-faq details { padding: 22px 0 }
+.implant-page .imp-faq details:first-child { padding-top: 0 }
+.implant-page .imp-faq summary { color: var(--ink); cursor: pointer; font: 400 1.5rem/1.3 var(--display); list-style: none; display: flex; justify-content: space-between; gap: 24px }
+.implant-page .imp-faq summary::-webkit-details-marker { display: none }
+.implant-page .imp-faq summary::after { content: "+"; color: var(--royal); font: 400 1.4rem/1 var(--body) }
+.implant-page .imp-faq details[open] summary::after { content: "−" }
+.implant-page .imp-faq details p { margin-top: 14px; max-width: 70ch }
+.implant-page .imp-gallery .gallery-item:focus-visible { outline-offset: 5px }
+html.motion-ready .implant-page [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.2,1); transition-delay: var(--reveal-delay, 0ms) }
+html.motion-ready .implant-page [data-reveal].is-visible { opacity: 1; transform: none }
+
+@media (max-width: 900px) {
+  .implant-page .imp-hero-grid,
+  .implant-page .imp-overview,
+  .implant-page .imp-candidacy-grid,
+  .implant-page .imp-life-grid,
+  .implant-page .imp-faq-grid { grid-template-columns: 1fr }
+  .implant-page .imp-hero-grid { gap: 40px }
+  .implant-page .imp-hero-copy { max-width: 680px }
+  .implant-page .imp-hero h1 { max-width: none }
+  .implant-page .imp-hero-photo { height: min(76vw, 620px); min-height: 340px; border-radius: 32% 32% 16px 16px }
+  .implant-page .imp-options-intro,
+  .implant-page .imp-treatment-heading,
+  .implant-page .imp-gallery-heading { grid-template-columns: 1fr; gap: 18px }
+  .implant-page .imp-candidacy-photo { height: clamp(300px, 54vw, 440px) }
+}
+
+@media (max-width: 640px) {
+  .implant-page .imp-hero { padding-top: 36px }
+  .implant-page .imp-hero h1 { max-width: none }
+  .implant-page .imp-hero-photo { height: 106vw; min-height: 0; max-height: 480px }
+  .implant-page .imp-countdown { min-width: 172px; padding: 12px 14px }
+  .implant-page .imp-options-list,
+  .implant-page .imp-gallery { grid-template-columns: 1fr }
+  .implant-page .thumb { display: none }
+  .implant-page .imp-options-list article:first-child { grid-row: auto }
+  .implant-page .imp-options-intro { margin-bottom: 32px }
+  .implant-page .imp-steps { gap: 0; margin-top: 36px }
+  .implant-page .imp-steps li { grid-template-columns: 1fr; gap: 10px }
+  .implant-page .imp-gallery .gallery-item { aspect-ratio: 4 / 3 }
+  .implant-page .ftr { display: grid; grid-template-columns: 1fr }
+  .implant-page .ftr nav { max-width: 100%; flex-wrap: wrap; gap: 8px 14px }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.motion-ready .implant-page [data-reveal] { opacity: 1; transform: none; transition: none }
+  .implant-page .imp-hero-photo img { transition: none }
+}

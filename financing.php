@@ -14,70 +14,10 @@ send_page_headers();
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 <style>html, body { margin: 0 } img { max-width: 100% } [hidden] { display: none !important }</style>
+<?= s('header_scripts') ?>
 </head>
 <body>
-<div class="masthead"><div class="wrap mh">
-  <span class="mh-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Most PPO plans accepted</span>
-  <span class="mh-item mh-hide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Monthly payment plans available</span>
-  <a class="mh-link" href="#estimate">View My Options <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-</div></div>
-
-<header class="site">
-  <div class="wrap hdr">
-    <a class="logo" href="index.php" aria-label="Home"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
-    <nav class="main" aria-label="Main">
-      <a href="index.php">Home</a>
-      <div class="nav-item">
-        <a href="index.php#welcome">About</a>
-        <div class="subnav">
-          <a href="index.php#doctor">Meet the Doctor</a>
-          <a href="index.php#welcome">Meet The Team</a>
-          <a href="financing.php" aria-current="page">Financing</a>
-          <a href="index.php#technology">Technology</a>
-          <a href="gallery.php">Office Tour</a>
-        </div>
-      </div>
-      <a href="index.php#services">Implants</a>
-      <a href="index.php#services">Cosmetic</a>
-      <a href="index.php#services">General</a>
-      <div class="nav-item">
-        <a href="index.php#results">Results</a>
-        <div class="subnav">
-          <a href="testimonials.php">Testimonials</a>
-          <a href="gallery.php">Gallery</a>
-        </div>
-      </div>
-      <a href="index.php#visit">Contact</a>
-    </nav>
-    <a class="phone" href="<?= e(phone_href()) ?>"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><?= e(s('phone_display')) ?></a>
-    <button class="btn btn-gold" data-open>Book Appointment</button>
-    <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
-  <nav class="wrap drawer" id="drawer" aria-label="Mobile" hidden>
-    <a href="index.php">Home</a>
-    <div class="drawer-group">
-      <a href="index.php#welcome">About</a>
-      <div class="drawer-subnav">
-        <a href="index.php#doctor">Meet the Doctor</a>
-        <a href="index.php#welcome">Meet The Team</a>
-        <a href="financing.php" aria-current="page">Financing</a>
-        <a href="index.php#technology">Technology</a>
-        <a href="gallery.php">Office Tour</a>
-      </div>
-    </div>
-    <a href="index.php#services">Implants</a>
-    <a href="index.php#services">Cosmetic</a>
-    <a href="index.php#services">General</a>
-    <div class="drawer-group">
-      <a href="index.php#results">Results</a>
-      <div class="drawer-subnav">
-        <a href="testimonials.php">Testimonials</a>
-        <a href="gallery.php">Gallery</a>
-      </div>
-    </div>
-    <a href="index.php#visit">Contact</a>
-  </nav>
-</header>
+<?php $site_base = ''; $site_current = 'financing'; include __DIR__ . '/inc/site-header.php'; ?>
 
 <main id="top">
   <section class="f-hero tint">
@@ -87,8 +27,8 @@ send_page_headers();
         <h1>Quality care that <em class="heading-accent">fits your budget</em></h1>
         <p class="lede">Cost shouldn't keep you from a healthy smile. We accept most PPO plans, file your claims for you, and offer monthly payment options so you can start treatment now and pay over time.</p>
         <div class="hero-ctas">
-          <button class="btn btn-gold" data-open>Book a Free Consultation</button>
-          <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call <?= e(s('phone_display')) ?></a>
+          <a class="btn btn-gold" href="<?= e(phone_href()) ?>">Call <?= e(s('phone_display')) ?></a>
+          <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
         </div>
       </div>
       <ul class="f-points">
@@ -189,25 +129,19 @@ send_page_headers();
         <p>Book a consultation and leave with a written treatment plan, your insurance coverage, and your payment options in hand.</p>
       </div>
       <div class="cta-actions">
-        <button class="btn btn-gold" data-open>Book Now</button>
-        <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call Us</a>
+        <a class="btn btn-gold" href="<?= e(phone_href()) ?>">Call Us</a>
+        <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap ftr">
-    <a class="logo" href="index.php" aria-label="Back to top"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
-    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="testimonials.php">Testimonials</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
-    <span>© Copyright 2026</span>
-  </div>
-</footer>
+<?php include __DIR__ . '/inc/site-footer.php'; ?>
 
 <div class="thumb" aria-label="Quick contact">
+  <a class="btn btn-gold" href="<?= e(phone_href()) ?>">Call</a>
   <a class="btn btn-line" href="<?= e(sms_href()) ?>">Text</a>
-  <a class="btn btn-line" href="<?= e(phone_href()) ?>">Call</a>
-  <button class="btn btn-gold" data-open>Book</button>
+  <button class="btn btn-line" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
 </div>
 
 <dialog id="dlg" aria-labelledby="dlg-h">
@@ -226,7 +160,7 @@ send_page_headers();
       <label class="chk"><input type="checkbox" name="marketing_consent" value="1" id="f-mkt"><span>I agree to receive occasional offers by text and email from <?= e(s('office_name')) ?>. Consent is not required to book.</span></label>
       <?php if (recaptcha_ready()): ?><p class="help-recaptcha">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p><?php endif; ?>
       <p class="err" id="f-err" role="alert"></p>
-      <button class="btn btn-gold" type="submit">Request Appointment</button>
+      <button class="btn btn-gold" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book Appointment</button>
     </form>
     <div class="done" id="done" hidden>
       <div class="ck"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
@@ -260,5 +194,7 @@ send_page_headers();
   cost.addEventListener('input', calc); calc();
 })();
 </script>
+<?= s('chat_script') ?>
+<?= s('footer_scripts') ?>
 </body>
 </html>

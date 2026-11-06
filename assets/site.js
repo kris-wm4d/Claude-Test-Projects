@@ -137,7 +137,7 @@
       const img = item.querySelector('img');
       item.addEventListener('click', () => openLightbox(img, item));
     });
-    document.querySelectorAll('.photos .slot img').forEach(img => {
+    document.querySelectorAll('.photos .gallery-card img').forEach(img => {
       img.addEventListener('click', () => openLightbox(img, img));
     });
 
@@ -150,5 +150,4 @@
     });
   }
 
-  const t = document.querySelector('#hours tr[data-d="' + new Date().getDay() + '"]'); if (t) t.classList.add('today');
 })();

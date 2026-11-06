@@ -14,6 +14,15 @@ const SECRET_KEYS   = ['recaptcha_secret_key', 'mailgun_api_key'];
 function defaults(): array
 {
     return [
+        // Site integrations
+        'site_name'           => 'Primary PPC',
+        'reporting_email'     => '',
+        'whatconverts'        => '',
+        'analytics'           => '',
+        'chat_script'         => '',
+        'header_scripts'      => '',
+        'footer_scripts'      => '',
+        'practices'           => [],
         // Office
         'office_name'         => 'Primary PPC',
         'doctor_name'         => 'Dr. Jane Doe',
@@ -52,8 +61,69 @@ function settings(bool $reload = false): array
             $saved = is_array($loaded) ? $loaded : [];
         }
         $cache = array_merge(defaults(), array_intersect_key($saved, defaults()));
+        if (!array_key_exists('site_name', $saved)) {
+            $cache['site_name'] = (string) ($saved['office_name'] ?? $cache['site_name']);
+        }
+        $cache['office_name'] = $cache['site_name'];
+        if (!array_key_exists('reporting_email', $saved)) {
+            $cache['reporting_email'] = (string) ($saved['form_to_emails'] ?? '');
+        }
+        if (!array_key_exists('practices', $saved) || !is_array($saved['practices']) || $saved['practices'] === []) {
+            $cache['practices'] = [[
+                'name' => (string) ($saved['office_name'] ?? $cache['site_name']),
+                'location' => trim((string) ($saved['location_line1'] ?? $cache['location_line1']) . ' ' . (string) ($saved['location_line2'] ?? $cache['location_line2'])),
+                'location_url' => (string) ($saved['location_url'] ?? $cache['location_url']),
+                'phone_number' => (string) ($saved['phone_display'] ?? $cache['phone_display']),
+                'phone_url' => (string) ($saved['phone_link'] ?? $cache['phone_link']),
+                'description' => '',
+                'office_hours' => "Monday: 8:00 am - 5:00 pm\nTuesday: 8:00 am - 5:00 pm\nWednesday: 9:00 am - 7:00 pm\nThursday: 8:00 am - 5:00 pm\nFriday: 8:00 am - 2:00 pm\nSaturday: By appointment\nSunday: Closed",
+            ]];
+        }
+        $cache['practices'] = array_values(array_filter($cache['practices'], 'is_array'));
+        $primary = $cache['practices'][0] ?? [];
+        $cache['location_line1'] = (string) ($primary['location'] ?? '');
+        $cache['location_line2'] = '';
+        $cache['location_url'] = (string) ($primary['location_url'] ?? '');
+        $cache['phone_display'] = (string) ($primary['phone_number'] ?? '');
+        $cache['phone_link'] = (string) ($primary['phone_url'] ?? '');
+        $cache['form_to_emails'] = $cache['reporting_email'];
+        $cache['map_embed_src'] = practice_map_src($primary);
     }
     return $cache;
+}
+
+function practice_list(): array
+{
+    return settings()['practices'];
+}
+
+function practice_map_src(array $practice): string
+{
+    $location = trim((string) ($practice['location'] ?? ''));
+    return $location === '' ? '' : 'https://www.google.com/maps?q=' . rawurlencode($location) . '&output=embed';
+}
+
+function practice_directions_url(array $practice): string
+{
+    $url = trim((string) ($practice['location_url'] ?? ''));
+    if ($url !== '') {
+        return $url;
+    }
+    $location = trim((string) ($practice['location'] ?? ''));
+    return $location === '' ? '' : 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($location);
+}
+
+function practice_phone_href(array $practice): string
+{
+    $link = trim((string) ($practice['phone_url'] ?? ''));
+    if ($link !== '') {
+        return $link;
+    }
+    $digits = preg_replace('/\D+/', '', (string) ($practice['phone_number'] ?? ''));
+    if (strlen($digits) === 10) {
+        $digits = '1' . $digits;
+    }
+    return $digits === '' ? '' : 'tel:+' . $digits;
 }
 
 function write_php_array(string $file, array $data): bool
@@ -191,36 +261,6 @@ function csrf_token(): string
 function csrf_ok(): bool
 {
     return isset($_POST['csrf'], $_SESSION['csrf']) && hash_equals($_SESSION['csrf'], (string) $_POST['csrf']);
-}
-
-/**
- * Accepts a Google Maps <iframe> embed snippet or a bare embed URL.
- * Returns the cleaned src, '' for empty input, or null if it is not a Google Maps embed.
- * Only the src is stored, so pasted markup can never inject HTML into the site.
- */
-function parse_map_embed(string $input): ?string
-{
-    $input = trim($input);
-    if ($input === '') {
-        return '';
-    }
-    if (preg_match('/\bsrc\s*=\s*["\']([^"\']+)["\']/i', $input, $m)) {
-        $input = $m[1];
-    }
-    $src = html_entity_decode($input, ENT_QUOTES, 'UTF-8');
-    $parts = parse_url($src);
-    if (!$parts || ($parts['scheme'] ?? '') !== 'https') {
-        return null;
-    }
-    $host = strtolower($parts['host'] ?? '');
-    $path = $parts['path'] ?? '';
-    $query = $parts['query'] ?? '';
-    $isEmbedPath = str_starts_with($path, '/maps/embed');
-    $isOutputEmbed = $path === '/maps' && str_contains($query, 'output=embed');
-    if (!in_array($host, ['www.google.com', 'maps.google.com', 'google.com'], true) || !($isEmbedPath || $isOutputEmbed)) {
-        return null;
-    }
-    return $src;
 }
 
 /** Basic security headers for public pages. */

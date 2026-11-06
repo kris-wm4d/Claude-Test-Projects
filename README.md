@@ -17,26 +17,28 @@ A responsive dental website with a static homepage, PHP inner pages, and a passw
 
 ## Static GitHub homepage
 
-GitHub Pages cannot execute PHP. Generate a static `index.html` from `index.php` with `php scripts/build-static.php` and commit it to the repository root. The menu is left unchanged; links to inner `.php` pages work only on PHP-enabled hosting.
+GitHub Pages cannot execute PHP. Generate the static homepage and Dental Implants page with `php scripts/build-static.php`, then commit the generated `index.html` files. Links to other inner `.php` pages work only on PHP-enabled hosting.
 
 The static homepage uses the public defaults in `inc/bootstrap.php`; generation stops if local `data/settings.php` exists. Appointment requests on the static homepage show a phone fallback because static hosting cannot run `submit.php`.
 
 To customize the static homepage, update the public defaults in `inc/bootstrap.php` before building. The settings dashboard is available only on PHP-enabled hosting.
 
+All public pages share the homepage header and footer through `inc/site-header.php` and `inc/site-footer.php`. The shared footer includes the office address, hours, photos, and map link. The header logo is styled at 60px tall.
+
 ## Settings
 
 | Section | Fields | Where it shows |
 |---|---|---|
-| Office & doctor | Office name, doctor's name, credentials | Header logo alt text, welcome, doctor section, page titles, form consent text, email "from" name |
-| Phone | Display number, phone link (`tel:`) | Header, Call/Text buttons, mobile bar, form, error messages. The link can be a tracking number that differs from the display number. |
-| Location & map | Address lines, Location URL, Google Map embed code | Visit section, Get directions link, map |
-| Contact form | Admin email(s), subject | Where appointment requests are sent |
-| reCAPTCHA v3 | Site key, secret key, minimum score | Spam check on every form submission |
+| Site info | Site name, reporting email, reCAPTCHA v3 keys, WhatConverts, Analytics, chat/header/footer scripts | Site name is used throughout the public site. Reporting email receives appointment requests. WhatConverts and Analytics values are stored only. Script fields are inserted into the public pages at their named positions. |
+| Practice info | Repeatable practice name, location, directions URL, phone number and URL, description, office hours | Every saved practice is shown in the shared Visit section with a Google Maps embed generated from its Location. The first practice supplies the site-wide call number and directions fallback. |
+| Office & doctor | Doctor's name, credentials | Doctor section, form consent text and email "from" name |
+| Contact form | Subject | Appointment request email subject |
+| reCAPTCHA v3 | Minimum score (keys are under Site info) | Spam check on every form submission |
 | Mailgun | Region, sending domain, API key, from email, from name | Sends the form emails |
 
-**Map embed:** in Google Maps open the practice, click Share → Embed a map → Copy HTML, and paste it. Only the Google Maps address inside the code is kept, so pasted code can't add anything else to the page.
+**Practice maps:** each map is embedded from its practice's Location using a Google Maps search URL; a separate iframe or embed snippet is not needed.
 
-**Secret keys** (reCAPTCHA secret, Mailgun API key) are never sent to the browser. They show as "Saved, ends in 1234". Leave the field blank to keep the saved key, or tick "Remove the saved key".
+**Secret keys** (reCAPTCHA secret, Mailgun API key) are never sent to the browser. They show as "Saved, ends in 1234". Leave the field blank to keep the saved key, or tick "Remove the saved key". Header, chat and footer script fields execute on public pages; only trusted administrators should edit them.
 
 ## Mailgun setup
 
@@ -80,11 +82,14 @@ location ~ \.(md|log|json)$ { deny all; }
 
 ```
 index.php, financing.php   public pages (read settings)
+implants/dental-implants/  dental implant service page at /implants/dental-implants/
 admin.php                  settings dashboard
 submit.php                 form handler (reCAPTCHA v3 + Mailgun)
 inc/bootstrap.php          settings, escaping, sessions, validation
+inc/site-header.php        shared site navigation and masthead
+inc/site-footer.php        shared site footer
 inc/services.php           reCAPTCHA and Mailgun API calls
-assets/                    styles.css, site.js
+assets/                    styles.css, implants.css, implants.js, site.js
 Uploads/2026/              Site images and other media for 2026
 data/                      created settings + password (keep private)
 ```

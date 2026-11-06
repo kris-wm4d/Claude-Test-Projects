@@ -14,3 +14,15 @@ Options -Indexes
     Header set X-Robots-Tag "noindex, nofollow"
   </Files>
 </IfModule>
+
+# WM4D VPN Protection
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteCond %{REQUEST_URI} ^(.*)?wp-login\.php(.*)$ [OR]
+ RewriteCond %{REQUEST_URI} ^(.*)?wp-admin(.*)$
+ RewriteCond %{REQUEST_URI} !^(.*)?admin-ajax\.php(.*)$ 
+ RewriteCond %{REMOTE_ADDR} !^34\.238\.213\.152$
+ RewriteCond %{REMOTE_ADDR} !^54\.179\.205\.95$
+ RewriteRule ^(.*)$ – [R=403,L]
+</IfModule>
+# END WM4D VPN Protection

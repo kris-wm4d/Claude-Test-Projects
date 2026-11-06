@@ -1,0 +1,2740 @@
+{
+ "url": "http://127.0.0.1:8123/implants/dental-implants/",
+ "at": "2026-11-06T18:39:06.586Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.58,
+    0.64,
+    0.7,
+    0.61,
+    0.69,
+    0.88,
+    0.58,
+    0.4
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 0,
+    "transitions": 51,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6695,
+     "screens": 7.4,
+     "words": 622,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dental-implant-hero.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp",
+      "implants02.webp",
+      "implants03.webp",
+      "modern-reception.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental implant options",
+     "words": 3,
+     "chars": 22,
+     "lines": 2,
+     "size": 73.6,
+     "vw": 5.1,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.35,
+     "top": 318,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental implant options",
+     "words": 3,
+     "lines": 2,
+     "size": 73.6,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental implant options",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 73.6,
+      "vw": 5.1,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 318,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A new foundation for replacement teeth",
+      "words": 6,
+      "chars": 38,
+      "lines": 2,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 1120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One missing tooth or several",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 1592,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your treatment, step by step",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 2198,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Is age a factor?",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2887,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Designed for everyday life",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3505,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Examples of implant restorations",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 3973,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about dental implants",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 4933,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find out if implants fit your needs",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 5445,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 52.8,
+      "vw": 3.7,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 5886,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      53,
+      74
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.88,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 73.6,
+      "vw": 5.1,
+      "font": "DM Serif Display",
+      "text": "Dental implant options"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5854
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 1010,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 5321,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.74
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.16
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.03
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 6,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "CALL (305) 555-0142",
+      "REQUEST APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 7,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6695,
+    "margins": {
+     "left": 56,
+     "right": 56
+    },
+    "sections": [
+     {
+      "sel": "section.imp-hero",
+      "tag": "section",
+      "top": 128,
+      "height": 882,
+      "words": 49,
+      "media": 1,
+      "middle": 88,
+      "heading": {
+       "text": "Dental implant options",
+       "size": 74,
+       "tag": "h1"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 608,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#implant-overview.band.tint",
+      "tag": "section",
+      "top": 1010,
+      "height": 468,
+      "words": 97,
+      "media": 0,
+      "middle": 258,
+      "heading": {
+       "text": "A new foundation for replacement teeth",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 59,
+      "textLeft": 56,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-options",
+      "tag": "section",
+      "top": 1478,
+      "height": 605,
+      "words": 94,
+      "media": 0,
+      "middle": 26,
+      "heading": {
+       "text": "One missing tooth or several",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 81,
+      "textLeft": 56,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatment.band.tint",
+      "tag": "section",
+      "top": 2083,
+      "height": 652,
+      "words": 101,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your treatment, step by step",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 62,
+      "textLeft": 56,
+      "textRight": 62,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-candidacy",
+      "tag": "section",
+      "top": 2735,
+      "height": 660,
+      "words": 61,
+      "media": 1,
+      "middle": 105,
+      "heading": {
+       "text": "Is age a factor?",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 842,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 3395,
+      "height": 468,
+      "words": 61,
+      "media": 0,
+      "middle": 363,
+      "heading": {
+       "text": "Designed for everyday life",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 72,
+      "textLeft": 56,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#examples.band.imp-gallery-section",
+      "tag": "section",
+      "top": 3863,
+      "height": 960,
+      "words": 36,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Examples of implant restorations",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 4823,
+      "height": 499,
+      "words": 133,
+      "media": 0,
+      "middle": 213,
+      "heading": {
+       "text": "Questions about dental implants",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 96,
+      "textLeft": 56,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 5321,
+      "height": 423,
+      "words": 26,
+      "media": 0,
+      "middle": 508,
+      "heading": {
+       "text": "Find out if implants fit your needs",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 5744,
+      "height": 793,
+      "words": 58,
+      "media": 3,
+      "middle": 231,
+      "heading": {
+       "text": "Visit our office",
+       "size": 53,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 57,
+      "textLeft": 56,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 6537,
+      "height": 150,
+      "words": 8,
+      "media": 0,
+      "middle": 342,
+      "heading": null,
+      "left": 70,
+      "right": 56,
+      "textLeft": 480,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental implant options",
+      "size": 74,
+      "top": 318,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 56,
+      "n": 19
+     },
+     {
+      "x": 647,
+      "n": 4
+     },
+     {
+      "x": 747,
+      "n": 4
+     },
+     {
+      "x": 720,
+      "n": 2
+     },
+     {
+      "x": 807,
+      "n": 2
+     },
+     {
+      "x": 832,
+      "n": 2
+     },
+     {
+      "x": 857,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 600,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.72,
+    0.79,
+    0.71,
+    0.58,
+    0.8,
+    0.84,
+    0.34,
+    0.48
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 0,
+    "transitions": 51,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7245,
+     "screens": 7.1,
+     "words": 615,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dental-implant-hero.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp",
+      "implants02.webp",
+      "implants03.webp",
+      "modern-reception.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental implant options",
+     "words": 3,
+     "chars": 22,
+     "lines": 1,
+     "size": 43.2,
+     "vw": 5.6,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.89,
+     "top": 212,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental implant options",
+     "words": 3,
+     "lines": 1,
+     "size": 43.2,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental implant options",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 212,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A new foundation for replacement teeth",
+      "words": 6,
+      "chars": 38,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 1252,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One missing tooth or several",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1838,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your treatment, step by step",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2489,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Is age a factor?",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 3187,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Designed for everyday life",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4084,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Examples of implant restorations",
+      "words": 4,
+      "chars": 32,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4551,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about dental implants",
+      "words": 4,
+      "chars": 31,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5163,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find out if implants fit your needs",
+      "words": 7,
+      "chars": 35,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5675,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 4.4,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6025,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      34,
+      43
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.88,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 81,
+     "max": {
+      "size": 43.2,
+      "vw": 5.6,
+      "font": "DM Serif Display",
+      "text": "Dental implant options"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.02,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 5993
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 1190,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 5600,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.75
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.16
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.03
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 6,
+     "heroLabels": [
+      "BOOK APPOINTMENT",
+      "CALL (305) 555-0142",
+      "REQUEST APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 7,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.43
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7245,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.imp-hero",
+      "tag": "section",
+      "top": 159,
+      "height": 1032,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Dental implant options",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 121,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#implant-overview.band.tint",
+      "tag": "section",
+      "top": 1190,
+      "height": 586,
+      "words": 97,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A new foundation for replacement teeth",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 98,
+      "textLeft": 24,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-options",
+      "tag": "section",
+      "top": 1776,
+      "height": 651,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One missing tooth or several",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 28,
+      "textLeft": 24,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatment.band.tint",
+      "tag": "section",
+      "top": 2428,
+      "height": 698,
+      "words": 101,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your treatment, step by step",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 29,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-candidacy",
+      "tag": "section",
+      "top": 3126,
+      "height": 897,
+      "words": 61,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Is age a factor?",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 99,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 4022,
+      "height": 468,
+      "words": 61,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Designed for everyday life",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 96,
+      "textLeft": 24,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#examples.band.imp-gallery-section",
+      "tag": "section",
+      "top": 4490,
+      "height": 611,
+      "words": 36,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Examples of implant restorations",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 89,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 5101,
+      "height": 498,
+      "words": 133,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions about dental implants",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 47,
+      "textLeft": 24,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 5600,
+      "height": 332,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Find out if implants fit your needs",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 246,
+      "textLeft": 24,
+      "textRight": 246,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 5932,
+      "height": 1106,
+      "words": 58,
+      "media": 3,
+      "middle": 3,
+      "heading": {
+       "text": "Visit our office",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 7037,
+      "height": 200,
+      "words": 8,
+      "media": 0,
+      "middle": 144,
+      "heading": null,
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental implant options",
+      "size": 43,
+      "top": 212,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 30
+     },
+     {
+      "x": 399,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.66,
+    0.9,
+    0.65,
+    0.78,
+    0.75,
+    0.81,
+    0.67,
+    0.82,
+    1,
+    0.45,
+    0.73
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 0,
+    "transitions": 51,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9238,
+     "screens": 10.9,
+     "words": 607,
+     "img": 10,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dental-implant-hero.jpg",
+      "treatment-room.jpg",
+      "implants01-2.webp",
+      "implants02.webp",
+      "implants03.webp",
+      "modern-reception.jpg",
+      "receiving-area.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Dental implant options",
+     "words": 3,
+     "chars": 22,
+     "lines": 2,
+     "size": 43.2,
+     "vw": 11.1,
+     "font": "DM Serif Display",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 195,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Dental implant options",
+     "words": 3,
+     "lines": 2,
+     "size": 43.2,
+     "font": "DM Serif Display"
+    },
+    "headings": [
+     {
+      "text": "Dental implant options",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 11.1,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 195,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "21:20:22",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Poppins",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1101,
+      "tag": "time",
+      "kind": "heading"
+     },
+     {
+      "text": "A new foundation for replacement teeth",
+      "words": 6,
+      "chars": 38,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1257,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "One missing tooth or several",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1996,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Replace a single tooth",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2227,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Restore a larger space",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2413,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Discuss every alternative",
+      "words": 3,
+      "chars": 25,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2598,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Your treatment, step by step",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2880,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Evaluation and planning",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3118,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Implant placement",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3322,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom restoration",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3525,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Is age a factor?",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3825,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Designed for everyday life",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4706,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Examples of implant restorations",
+      "words": 4,
+      "chars": 32,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5301,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about dental implants",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6591,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "How do I know if implants are right for me?",
+      "words": 10,
+      "chars": 43,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6697,
+      "tag": "summary",
+      "kind": "heading"
+     },
+     {
+      "text": "How long does treatment take?",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6804,
+      "tag": "summary",
+      "kind": "heading"
+     },
+     {
+      "text": "Will an implant look like my other teeth?",
+      "words": 8,
+      "chars": 41,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6910,
+      "tag": "summary",
+      "kind": "heading"
+     },
+     {
+      "text": "What happens at a consultation?",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.3,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7017,
+      "tag": "summary",
+      "kind": "heading"
+     },
+     {
+      "text": "Find out if implants fit your needs",
+      "words": 7,
+      "chars": 35,
+      "lines": 2,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7235,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit our office",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 8.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7680,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "[Street address] Miami, FL [ZIP]",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "DM Serif Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7729,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 22,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Poppins",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "DM Serif Display",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      34,
+      43
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Poppins",
+      "size": 16,
+      "leading": 1.88,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.3
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 43.2,
+      "vw": 11.1,
+      "font": "DM Serif Display",
+      "text": "Dental implant options"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.01,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "Come see us",
+      "above": "Visit our office",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 7647
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eaecf5",
+       "top": 1197,
+       "hsl": {
+        "h": 229,
+        "s": 0.35,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#060f3d",
+       "top": 7161,
+       "hsl": {
+        "h": 230,
+        "s": 0.82,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#474747",
+       "share": 0.76
+      },
+      {
+       "color": "#0e1630",
+       "share": 0.15
+      },
+      {
+       "color": "#0a1960",
+       "share": 0.03
+      },
+      {
+       "color": "#dde1f2",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#dfb200",
+      "hsl": {
+       "h": 48,
+       "s": 1,
+       "l": 0.44
+      },
+      "fg": "#0e1630"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 5,
+     "heroLabels": [
+      "CALL (305) 555-0142",
+      "REQUEST APPOINTMENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+      "div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 7,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 3094
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "dm serif display",
+     "poppins"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9238,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.imp-hero",
+      "tag": "section",
+      "top": 159,
+      "height": 1039,
+      "words": 49,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Dental implant options",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#implant-overview.band.tint",
+      "tag": "section",
+      "top": 1197,
+      "height": 739,
+      "words": 97,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A new foundation for replacement teeth",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-options",
+      "tag": "section",
+      "top": 1936,
+      "height": 883,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One missing tooth or several",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatment.band.tint",
+      "tag": "section",
+      "top": 2820,
+      "height": 945,
+      "words": 101,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your treatment, step by step",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.imp-candidacy",
+      "tag": "section",
+      "top": 3765,
+      "height": 881,
+      "words": 61,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Is age a factor?",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 4646,
+      "height": 595,
+      "words": 61,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Designed for everyday life",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#examples.band.imp-gallery-section",
+      "tag": "section",
+      "top": 5241,
+      "height": 1290,
+      "words": 36,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Examples of implant restorations",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.tint",
+      "tag": "section",
+      "top": 6531,
+      "height": 630,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions about dental implants",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.cta",
+      "tag": "section",
+      "top": 7161,
+      "height": 427,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Find out if implants fit your needs",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 35,
+      "textLeft": 24,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.band",
+      "tag": "section",
+      "top": 7587,
+      "height": 1289,
+      "words": 58,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Visit our office",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 8876,
+      "height": 354,
+      "words": 8,
+      "media": 0,
+      "middle": 14,
+      "heading": null,
+      "left": 24,
+      "right": 75,
+      "textLeft": 24,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Dental implant options",
+      "size": 43,
+      "top": 195,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 34
+     }
+    ],
+    "leftBlocks": 34,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Come see us\" above \"Visit our office\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "2 gradient fill(s): div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg | div.slot.gallery-card → repeating-linear-gradient(135deg, rgb(234, 236, 245) 0px, rgb(234, 236, 245) 12px, rgb(244, 245, 250) 12px, rg",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (13, 14, 15, 16, 17, 18, 24, 26, 53, 74).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "2 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\desktop-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\tablet-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\mobile-page-01.jpg",
+    "C:\\Users\\Krisp\\Documents\\GitHub\\Claude Projects\\.taste-skill\\inspect\\shared-visit-implants\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

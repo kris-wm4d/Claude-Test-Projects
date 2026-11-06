@@ -53,6 +53,7 @@ header.site { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
 .hdr { display: flex; align-items: center; gap: 28px; padding-block: 10px }
 .logo { display: inline-flex; align-items: center; justify-content: center; max-width: 225px }
 .logo img { display: block; height: 52px; width: auto; max-width: 100%; object-fit: contain }
+.hdr .logo img { height: 60px }
 nav.main { display: flex; gap: 20px; white-space: nowrap; margin-left: auto; font: 500 .82rem/1 var(--body); letter-spacing: .08em; text-transform: uppercase; align-items: stretch }
 nav.main a { text-decoration: none; color: var(--ink); padding-block: 8px; border-bottom: 2px solid transparent }
 nav.main a:hover, nav.main a[aria-current] { border-bottom-color: var(--gold) }
@@ -65,7 +66,9 @@ nav.main .subnav a { display: block; padding: 10px 12px; border-radius: 10px; bo
 nav.main .subnav a:hover { background: var(--royal-tint); border-bottom-color: transparent }
 .phone { display: inline-flex; align-items: center; gap: 8px; font: 600 1rem/1 var(--body); color: var(--ink); text-decoration: none; white-space: nowrap; font-variant-numeric: tabular-nums }
 .phone svg { width: 16px; height: 16px; color: var(--gold) }
+.hdr .phone.btn svg { color: inherit }
 .hdr .btn { padding: 13px 18px; font-size: .8rem }
+.hdr .phone.btn { font-size: .8rem }
 .burger { display: none; margin-left: auto; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--royal-line); background: var(--white); cursor: pointer; place-items: center }
 .burger svg { width: 22px; height: 22px; color: var(--ink) }
 .drawer { border-top: 1px solid var(--royal-line); padding-block: 12px 20px; display: grid; gap: 4px }
@@ -76,7 +79,7 @@ nav.main .subnav a:hover { background: var(--royal-tint); border-bottom-color: t
 .drawer .drawer-group > a { display: flex; align-items: center; justify-content: space-between; gap: 8px }
 .drawer .drawer-group > a::after { content: "▾"; font-size: .8rem; color: var(--muted) }
 @media (max-width: 1240px) { nav.main { display: none } .hdr .phone { margin-left: auto } .burger { display: grid; margin-left: 0 } }
-@media (max-width: 640px) { .hdr .btn, .hdr .phone { display: none } .burger { margin-left: auto } .logo img { height: 44px } }
+@media (max-width: 640px) { .hdr .btn, .hdr .phone { display: none } .burger { margin-left: auto } .logo img { height: 44px } .hdr .logo img { height: 60px } }
 
 .slot img, .photo-placeholder { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: inherit }
 
@@ -187,6 +190,11 @@ nav.main .subnav a:hover { background: var(--royal-tint); border-bottom-color: t
 .visit { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(28px, 6vw, 72px); align-items: start }
 .visit > * { min-width: 0 }
 .visit .copy { display: grid; gap: 14px }
+.practice-entry { display: grid; gap: 10px; padding-top: 14px }
+.practice-entry h3 { font-family: var(--display); font-size: 1.5rem; line-height: 1.15; color: var(--ink) }
+.practice-entry .addr { font-size: 1.2rem }
+.practice-hours { font-size: .92rem; line-height: 1.65 }
+.practice-hours strong { color: var(--ink) }
 .addr { font: 400 1.6rem/1.25 var(--display); color: var(--ink) }
 .hours { width: 100%; border-collapse: collapse; font-size: .92rem; font-variant-numeric: tabular-nums; margin-top: 8px }
 .hours td { padding: 10px 0; border-bottom: 1px solid var(--royal-line) }
@@ -232,8 +240,9 @@ footer { background: var(--royal-deep); color: #aab2d6; padding-block: 44px 110p
 @media (min-width: 761px) { footer { padding-bottom: 44px } }
 
 /* mobile bar */
-.thumb { position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; display: none; grid-template-columns: 1fr 1fr 1.25fr; gap: 8px; background: var(--white); border-top: 1px solid var(--royal-line); padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)) }
-.thumb .btn { padding: 14px 8px; font-size: .78rem }
+.thumb { position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; display: none; grid-template-columns: .8fr .8fr 2fr; gap: 8px; background: var(--white); border-top: 1px solid var(--royal-line); padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)) }
+.thumb .btn { gap: 5px; padding: 14px 8px; font-size: .78rem }
+.thumb .btn svg { width: 14px; height: 14px }
 @media (max-width: 760px) { .thumb { display: grid } }
 
 /* modal */

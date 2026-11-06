@@ -105,51 +105,91 @@ if ($loggedIn && $action !== '') {
         $in = fn(string $k) => trim((string) ($_POST[$k] ?? ''));
         $new = settings();
 
-        foreach (['office_name', 'doctor_name', 'doctor_credentials', 'location_line1', 'location_line2', 'phone_display', 'form_subject', 'mailgun_from_name'] as $k) {
+        foreach (['doctor_name', 'doctor_credentials', 'form_subject', 'mailgun_from_name'] as $k) {
             $new[$k] = one_line($in($k));
         }
-        foreach (['office_name' => 'Office name', 'phone_display' => 'Office phone number'] as $k => $label) {
-            if ($new[$k] === '') {
-                $errors[$k] = "$label can't be empty.";
-            }
+        $new['site_name'] = one_line($in('site_name'));
+        if ($new['site_name'] === '') {
+            $errors['site_name'] = "Site name can't be empty.";
         }
+        $new['office_name'] = $new['site_name'];
 
-        // phone link
-        $link = preg_replace('/\s+/', '', $in('phone_link'));
-        if ($link !== '') {
-            if (!preg_match('/^tel:/i', $link)) {
-                $link = 'tel:' . $link;
-            }
-            $link = 'tel:' . preg_replace('/[^0-9+]/', '', substr($link, 4));
-            if (!preg_match('/^tel:\+?[0-9]{7,15}$/', $link)) {
-                $errors['phone_link'] = 'Use a format like tel:+13055550142 (7 to 15 digits).';
-            }
-        }
-        $new['phone_link'] = $link;
-
-        // location url
-        $url = $in('location_url');
-        if ($url !== '' && (!filter_var($url, FILTER_VALIDATE_URL) || !preg_match('#^https://#i', $url))) {
-            $errors['location_url'] = 'Enter a full https:// link, e.g. your Google Maps share link.';
-        }
-        $new['location_url'] = $url;
-
-        // map embed
-        $src = parse_map_embed((string) ($_POST['map_embed'] ?? ''));
-        if ($src === null) {
-            $errors['map_embed'] = 'Paste the iframe code from Google Maps → Share → Embed a map, or its https://www.google.com/maps/embed?... link.';
-        } else {
-            $new['map_embed_src'] = $src;
-        }
-
-        // form recipients
-        $rawTo = $in('form_to_emails');
+        $rawTo = $in('reporting_email');
         $valid = email_list($rawTo);
         $tokens = array_filter(preg_split('/[,;\s]+/', $rawTo));
         if ($rawTo !== '' && count($valid) !== count(array_unique($tokens))) {
-            $errors['form_to_emails'] = 'One or more addresses are not valid. Separate multiple addresses with commas.';
+            $errors['reporting_email'] = 'Enter a valid email address.';
         }
-        $new['form_to_emails'] = implode(', ', $valid);
+        $new['reporting_email'] = implode(', ', $valid);
+        $new['form_to_emails'] = $new['reporting_email'];
+
+        foreach (['whatconverts', 'analytics'] as $key) {
+            $new[$key] = one_line($in($key));
+        }
+        foreach (['chat_script', 'header_scripts', 'footer_scripts'] as $key) {
+            $new[$key] = (string) ($_POST[$key] ?? '');
+        }
+
+        $postedPractices = $_POST['practices'] ?? [];
+        $practices = [];
+        if (!is_array($postedPractices)) {
+            $errors['practices'] = 'Practice information must be submitted as a list.';
+        } else {
+            foreach ($postedPractices as $index => $practice) {
+                if (!is_array($practice)) {
+                    continue;
+                }
+                $name = one_line((string) ($practice['name'] ?? ''));
+                $location = one_line((string) ($practice['location'] ?? ''));
+                $locationUrl = trim((string) ($practice['location_url'] ?? ''));
+                $phoneNumber = one_line((string) ($practice['phone_number'] ?? ''));
+                $phoneUrl = preg_replace('/\s+/', '', (string) ($practice['phone_url'] ?? ''));
+                $description = one_line((string) ($practice['description'] ?? ''));
+                $officeHours = trim((string) ($practice['office_hours'] ?? ''));
+                $rowIndex = (int) $index;
+                $prefix = 'practice_' . $rowIndex . '_';
+
+                if ($name === '') {
+                    $errors[$prefix . 'name'] = 'Enter a practice name.';
+                }
+                if ($location === '') {
+                    $errors[$prefix . 'location'] = 'Enter a location.';
+                }
+                if ($locationUrl !== '' && (!filter_var($locationUrl, FILTER_VALIDATE_URL) || !preg_match('#^https://#i', $locationUrl))) {
+                    $errors[$prefix . 'location_url'] = 'Enter a full https:// link.';
+                }
+                if ($phoneUrl !== '') {
+                    if (!preg_match('/^tel:/i', $phoneUrl)) {
+                        $phoneUrl = 'tel:' . $phoneUrl;
+                    }
+                    $phoneUrl = 'tel:' . preg_replace('/[^0-9+]/', '', substr($phoneUrl, 4));
+                    if (!preg_match('/^tel:\+?[0-9]{7,15}$/', $phoneUrl)) {
+                        $errors[$prefix . 'phone_url'] = 'Use a phone link such as tel:+13055550142.';
+                    }
+                }
+
+                $practices[$rowIndex] = [
+                    'name' => $name,
+                    'location' => $location,
+                    'location_url' => $locationUrl,
+                    'phone_number' => $phoneNumber,
+                    'phone_url' => $phoneUrl,
+                    'description' => $description,
+                    'office_hours' => $officeHours,
+                ];
+            }
+        }
+        if (!$practices) {
+            $errors['practices'] = 'Add at least one practice.';
+        }
+        $new['practices'] = $practices;
+        $primary = $practices[0] ?? [];
+        $new['location_line1'] = (string) ($primary['location'] ?? '');
+        $new['location_line2'] = '';
+        $new['location_url'] = practice_directions_url($primary);
+        $new['map_embed_src'] = practice_map_src($primary);
+        $new['phone_display'] = (string) ($primary['phone_number'] ?? '');
+        $new['phone_link'] = (string) ($primary['phone_url'] ?? '');
 
         // reCAPTCHA
         $new['recaptcha_site_key'] = $in('recaptcha_site_key');
@@ -188,7 +228,6 @@ if ($loggedIn && $action !== '') {
 
         if ($errors) {
             $form = $new;
-            $form['map_embed_raw'] = (string) ($_POST['map_embed'] ?? '');
             $flash = ['err', 'Nothing was saved. Fix the highlighted fields.'];
         } elseif (!$writable || !save_settings($new)) {
             $form = $new;
@@ -249,7 +288,6 @@ function chip(bool $ok, string $yes, string $no): string
 {
     return '<span class="chip ' . ($ok ? 'on' : 'off') . '"><i></i>' . e($ok ? $yes : $no) . '</span>';
 }
-$mapRaw = $form['map_embed_raw'] ?? ($form['map_embed_src'] ? '<iframe src="' . $form['map_embed_src'] . '" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>' : '');
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -308,6 +346,14 @@ input:focus, select:focus, textarea:focus { border-color: var(--navy); outline: 
 .clr { display: flex; gap: 8px; align-items: center; font-size: .78rem; color: var(--muted) }
 .preview { margin-top: 4px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; height: 220px; background: var(--tint); display: grid; place-items: center; color: var(--muted); font-size: .82rem }
 .preview iframe { width: 100%; height: 100%; border: 0 }
+.practice-list { display: grid; gap: 12px; margin-bottom: 16px }
+.practice-item { position: relative; min-width: 0; margin: 0; padding: 18px; border: 1px solid var(--line); border-radius: 14px }
+.practice-item legend { padding: 0 8px; color: var(--ink); font-size: .95rem; font-weight: 600 }
+.practice-item .remove-practice { position: absolute; top: 8px; right: 12px; padding: 9px 14px; font-size: .75rem }
+.practice-item .grid { padding-top: 4px }
+.practice-item textarea { min-height: 150px; font-family: Poppins, sans-serif; font-size: .92rem }
+.practice-map { height: 190px }
+.fld textarea[id^="chat_script"], .fld textarea[id^="header_scripts"], .fld textarea[id^="footer_scripts"] { min-height: 160px }
 .derived { font-size: .78rem; color: var(--muted) } .derived code { color: var(--ink) }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: 600 .85rem/1 Poppins, sans-serif; padding: 13px 20px; border-radius: 999px; border: 1px solid transparent; cursor: pointer; text-decoration: none; white-space: nowrap }
 .btn-gold { background: var(--gold); color: var(--ink) } .btn-navy { background: var(--navy); color: #fff } .btn-line { background: var(--white); border-color: var(--line); color: var(--navy) }
@@ -351,9 +397,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--navy); outline: 
   <aside>
     <div class="brand"><?= e(s('office_name')) ?><small>Website settings</small></div>
     <nav aria-label="Settings sections">
+      <a href="#site-info">Site info</a>
+      <a href="#practices">Practices</a>
       <a href="#office">Office &amp; doctor</a>
-      <a href="#phone">Phone</a>
-      <a href="#location">Location &amp; map</a>
       <a href="#form">Contact form</a>
       <a href="#recaptcha">reCAPTCHA v3</a>
       <a href="#mailgun">Mailgun</a>
@@ -381,43 +427,76 @@ input:focus, select:focus, textarea:focus { border-color: var(--navy); outline: 
       <input type="hidden" name="csrf" value="<?= e($token) ?>">
       <input type="hidden" name="action" value="save">
 
-      <section class="card" id="office">
-        <header><div><h2>Office &amp; doctor</h2><p>Shown in the header, welcome section, doctor section, footer and form consent text.</p></div></header>
+      <section class="card" id="site-info">
+        <header><div><h2>Site info</h2><p>Site-wide identity and integration values. WhatConverts and Analytics are stored for later front-end use.</p></div></header>
         <div class="grid">
-          <?= field($form, $errors, 'office_name', 'Office name', '', 'text', 'required maxlength="80"') ?>
+          <?= field($form, $errors, 'site_name', 'Site name', 'Used in the site title, logo text and practice communication.', 'text', 'required maxlength="80"') ?>
+          <?= field($form, $errors, 'reporting_email', 'Reporting email', 'Receives appointment request notifications.', 'text', 'maxlength="500" spellcheck="false" autocomplete="email"') ?>
+          <?= field($form, $errors, 'recaptcha_site_key', 'V3 site key', 'Public reCAPTCHA v3 key.', 'text', 'maxlength="200" spellcheck="false" autocomplete="off"') ?>
+          <div><?= secret_field($errors, 'recaptcha_secret_key', 'V3 secret key', 'Private reCAPTCHA v3 key. It is never sent to the browser.') ?></div>
+          <?= field($form, $errors, 'whatconverts', 'WhatConverts', 'Stored for a future front-end integration.', 'text', 'maxlength="500" spellcheck="false" autocomplete="off"') ?>
+          <?= field($form, $errors, 'analytics', 'Analytics', 'Stored for a future front-end integration.', 'text', 'maxlength="500" spellcheck="false" autocomplete="off"') ?>
+          <label class="fld full"><span class="lbl">Chat script</span><textarea name="chat_script" id="chat_script" maxlength="30000" spellcheck="false"><?= e($form['chat_script'] ?? '') ?></textarea><span class="help">Paste the complete trusted provider snippet; it is included verbatim on public pages before the footer scripts.</span></label>
+          <label class="fld full"><span class="lbl">Header scripts</span><textarea name="header_scripts" id="header_scripts" maxlength="30000" spellcheck="false"><?= e($form['header_scripts'] ?? '') ?></textarea><span class="help">Paste complete trusted HTML snippets. They are included verbatim in the public page head.</span></label>
+          <label class="fld full"><span class="lbl">Footer scripts</span><textarea name="footer_scripts" id="footer_scripts" maxlength="30000" spellcheck="false"><?= e($form['footer_scripts'] ?? '') ?></textarea><span class="help">Paste complete trusted HTML snippets. They are included verbatim before the closing body tag on public pages.</span></label>
+        </div>
+      </section>
+
+      <section class="card" id="practices">
+        <header><div><h2>Practice info</h2><p>Add one entry for each office. Each location gets its own directions link, map and hours on the website.</p></div></header>
+        <?php if (isset($errors['practices'])): ?><p class="ferr" role="alert"><?= e($errors['practices']) ?></p><?php endif; ?>
+        <div class="practice-list" id="practice-list">
+          <?php foreach (($form['practices'] ?? []) as $index => $practice): ?>
+            <?php $practice = is_array($practice) ? $practice : []; ?>
+            <fieldset class="practice-item">
+              <legend>Practice <span data-practice-number><?= $index + 1 ?></span></legend>
+              <button type="button" class="btn btn-line remove-practice">Remove practice</button>
+              <div class="grid">
+                <?php foreach (['name' => 'Practice name', 'location' => 'Location', 'location_url' => 'Location URL', 'phone_number' => 'Phone number', 'phone_url' => 'Phone number URL', 'description' => 'Practice description'] as $key => $label): ?>
+                  <?php $errorKey = 'practice_' . $index . '_' . $key; ?>
+                  <label class="fld<?= isset($errors[$errorKey]) ? ' bad' : '' ?>">
+                    <span class="lbl"><?= e($label) ?></span>
+                    <input type="<?= $key === 'location_url' ? 'url' : 'text' ?>" name="practices[<?= $index ?>][<?= e($key) ?>]" id="<?= e($errorKey) ?>" value="<?= e($practice[$key] ?? '') ?>" maxlength="500"<?= in_array($key, ['name', 'location'], true) ? ' required' : '' ?><?= isset($errors[$errorKey]) ? ' aria-invalid="true" aria-describedby="' . e($errorKey) . '-err"' : '' ?>>
+                    <?= err($errors, $errorKey) ?>
+                  </label>
+                <?php endforeach; ?>
+                <?php $hoursError = 'practice_' . $index . '_office_hours'; ?>
+                <label class="fld full<?= isset($errors[$hoursError]) ? ' bad' : '' ?>"><span class="lbl">Office hours</span><textarea name="practices[<?= $index ?>][office_hours]" id="<?= e($hoursError) ?>" maxlength="3000"><?= e($practice['office_hours'] ?? '') ?></textarea><?= err($errors, $hoursError) ?></label>
+                <div class="fld full"><span class="lbl">Location map</span><div class="preview practice-map"><?php if (practice_map_src($practice)): ?><iframe src="<?= e(practice_map_src($practice)) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map preview for <?= e($practice['name'] ?? 'practice') ?>"></iframe><?php else: ?>Enter a location to preview its Google Map<?php endif; ?></div><span class="help">The map embed is generated from the Location field.</span></div>
+              </div>
+            </fieldset>
+          <?php endforeach; ?>
+        </div>
+        <button type="button" class="btn btn-line" id="add-practice">Add another practice</button>
+        <template id="practice-template">
+          <fieldset class="practice-item">
+            <legend>Practice <span data-practice-number></span></legend>
+            <button type="button" class="btn btn-line remove-practice">Remove practice</button>
+            <div class="grid">
+              <label class="fld"><span class="lbl">Practice name</span><input type="text" name="practices[__INDEX__][name]" maxlength="500" required></label>
+              <label class="fld"><span class="lbl">Location</span><input type="text" name="practices[__INDEX__][location]" maxlength="500" required></label>
+              <label class="fld"><span class="lbl">Location URL</span><input type="url" name="practices[__INDEX__][location_url]" maxlength="500"></label>
+              <label class="fld"><span class="lbl">Phone number</span><input type="text" name="practices[__INDEX__][phone_number]" maxlength="500"></label>
+              <label class="fld"><span class="lbl">Phone number URL</span><input type="text" name="practices[__INDEX__][phone_url]" maxlength="500"></label>
+              <label class="fld"><span class="lbl">Practice description</span><input type="text" name="practices[__INDEX__][description]" maxlength="500"></label>
+              <label class="fld full"><span class="lbl">Office hours</span><textarea name="practices[__INDEX__][office_hours]" maxlength="3000"></textarea></label>
+              <div class="fld full"><span class="lbl">Location map</span><div class="preview practice-map">Enter a location to preview its Google Map</div><span class="help">The map embed is generated from the Location field.</span></div>
+            </div>
+          </fieldset>
+        </template>
+      </section>
+
+      <section class="card" id="office">
+        <header><div><h2>Office &amp; doctor</h2><p>Doctor information shown on the homepage.</p></div></header>
+        <div class="grid">
           <?= field($form, $errors, 'doctor_name', "Doctor's name", 'Include the title, e.g. <code>Dr. Jane Smith</code>.', 'text', 'maxlength="80"') ?>
           <?= field($form, $errors, 'doctor_credentials', 'Doctor credentials', 'e.g. <code>DMD</code> or <code>DDS, MS</code>', 'text', 'maxlength="40"') ?>
         </div>
       </section>
 
-      <section class="card" id="phone">
-        <header><div><h2>Phone</h2><p>Used in the header, Call / Text buttons, mobile bar and appointment form.</p></div></header>
-        <div class="grid">
-          <?= field($form, $errors, 'phone_display', 'Office phone number', 'How the number is shown, e.g. <code>(305) 555-0142</code>.', 'text', 'required maxlength="30"') ?>
-          <?= field($form, $errors, 'phone_link', 'Phone number link', 'Where Call buttons dial. Use a tracking number here if needed, e.g. <code>tel:+13055550142</code>. Leave blank to use the display number.', 'text', 'maxlength="24" spellcheck="false"') ?>
-          <p class="derived full">Call buttons: <code id="d-tel"><?= e(phone_href() ?: '(none)') ?></code> · Text buttons: <code id="d-sms"><?= e(sms_href() ?: '(none)') ?></code></p>
-        </div>
-      </section>
-
-      <section class="card" id="location">
-        <header><div><h2>Location &amp; map</h2><p>Address block, Get directions link and the map in the Visit section.</p></div></header>
-        <div class="grid">
-          <?= field($form, $errors, 'location_line1', 'Address line 1', 'Street address', 'text', 'maxlength="120"') ?>
-          <?= field($form, $errors, 'location_line2', 'Address line 2', 'City, state ZIP', 'text', 'maxlength="120"') ?>
-          <div class="full"><?= field($form, $errors, 'location_url', 'Location URL', 'Your Google Maps / Business Profile link. Opens from "Get directions".', 'url', 'maxlength="500" spellcheck="false"') ?></div>
-          <label class="fld full<?= isset($errors['map_embed']) ? ' bad' : '' ?>"><span class="lbl">Google Map embed code</span>
-            <textarea name="map_embed" id="map_embed" spellcheck="false" placeholder='<iframe src="https://www.google.com/maps/embed?pb=..." ...></iframe>'><?= e($mapRaw) ?></textarea>
-            <span class="help">In Google Maps: Share → Embed a map → Copy HTML, then paste it here. Only the Google Maps address is kept. Leave empty to show a map card that links to the Location URL.</span>
-            <?= err($errors, 'map_embed') ?>
-            <div class="preview" id="map-preview"><?php if (s('map_embed_src') !== '' && !isset($errors['map_embed'])): ?><iframe src="<?= e(s('map_embed_src')) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map preview"></iframe><?php else: ?>No map embed saved<?php endif; ?></div>
-          </label>
-        </div>
-      </section>
-
       <section class="card" id="form">
-        <header><div><h2>Contact form</h2><p>Where appointment requests are emailed.</p></div></header>
+        <header><div><h2>Contact form</h2><p>Customize the subject line for appointment request emails. The reporting email is set under Site Info.</p></div></header>
         <div class="grid">
-          <div class="full"><?= field($form, $errors, 'form_to_emails', 'Form admin email', 'Separate multiple addresses with commas.', 'text', 'maxlength="500" spellcheck="false" autocomplete="off"') ?></div>
           <div class="full"><?= field($form, $errors, 'form_subject', 'Email subject', 'The patient\'s name is added to the end.', 'text', 'maxlength="120"') ?></div>
         </div>
       </section>
@@ -425,8 +504,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--navy); outline: 
       <section class="card" id="recaptcha">
         <header><div><h2>reCAPTCHA v3</h2><p>Blocks spam without a checkbox. Create keys at <a href="https://www.google.com/recaptcha/admin/create" target="_blank" rel="noopener">google.com/recaptcha/admin</a> (choose v3, add this domain).</p></div><?= chip(recaptcha_ready(), 'On', 'Off') ?></header>
         <div class="grid">
-          <?= field($form, $errors, 'recaptcha_site_key', 'Site key', 'Public key, loaded on the website.', 'text', 'maxlength="100" spellcheck="false" autocomplete="off"') ?>
-          <?= secret_field($errors, 'recaptcha_secret_key', 'Secret key', 'Private key, used only on the server.') ?>
           <label class="fld"><span class="lbl">Minimum score</span>
             <select name="recaptcha_min_score" id="recaptcha_min_score">
               <?php foreach (['0.3' => '0.3 · lenient', '0.5' => '0.5 · recommended', '0.7' => '0.7 · strict', '0.9' => '0.9 · very strict'] as $v => $l): ?>
@@ -489,25 +566,50 @@ input:focus, select:focus, textarea:focus { border-color: var(--navy); outline: 
   form.addEventListener('submit', () => { changed = false; });
   addEventListener('beforeunload', e => { if (changed) { e.preventDefault(); e.returnValue = ''; } });
 
-  // live phone link preview
-  const disp = document.getElementById('phone_display'), link = document.getElementById('phone_link');
-  const upd = () => {
-    let l = link.value.replace(/\s+/g, '');
-    if (!l) { let d = disp.value.replace(/\D/g, ''); if (d.length === 10) d = '1' + d; l = d ? 'tel:+' + d : ''; }
-    else { if (!/^tel:/i.test(l)) l = 'tel:' + l; l = 'tel:' + l.slice(4).replace(/[^0-9+]/g, ''); }
-    document.getElementById('d-tel').textContent = l || '(none)';
-    document.getElementById('d-sms').textContent = l ? l.replace(/^tel:/, 'sms:') : '(none)';
+  const practiceList = document.getElementById('practice-list');
+  const practiceTemplate = document.getElementById('practice-template');
+  const addPractice = document.getElementById('add-practice');
+  let nextPractice = [...practiceList.querySelectorAll('input[name^="practices["]')].reduce((next, input) => {
+    const match = input.name.match(/^practices\[(\d+)\]/);
+    return match ? Math.max(next, Number(match[1]) + 1) : next;
+  }, 0);
+  const updateMap = item => {
+    const locationInput = item.querySelector('input[name$="[location]"]');
+    const preview = item.querySelector('.practice-map');
+    const location = locationInput.value.trim();
+    preview.replaceChildren();
+    if (!location) {
+      preview.textContent = 'Enter a location to preview its Google Map';
+      return;
+    }
+    const frame = document.createElement('iframe');
+    frame.src = 'https://www.google.com/maps?q=' + encodeURIComponent(location) + '&output=embed';
+    frame.loading = 'lazy';
+    frame.referrerPolicy = 'no-referrer-when-downgrade';
+    frame.title = 'Map preview';
+    preview.appendChild(frame);
   };
-  disp.addEventListener('input', upd); link.addEventListener('input', upd);
-
-  // live map preview (Google Maps embeds only)
-  const ta = document.getElementById('map_embed'), pv = document.getElementById('map-preview');
-  ta.addEventListener('input', () => {
-    const m = ta.value.match(/src\s*=\s*["']([^"']+)["']/i); const src = (m ? m[1] : ta.value.trim()).replace(/&amp;/g, '&');
-    let ok = false; try { const u = new URL(src); ok = u.protocol === 'https:' && /(^|\.)google\.com$/.test(u.hostname) && (u.pathname.startsWith('/maps/embed') || (u.pathname === '/maps' && u.search.includes('output=embed'))); } catch (_) {}
-    pv.textContent = '';
-    if (ok) { const f = document.createElement('iframe'); f.src = src; f.loading = 'lazy'; f.title = 'Map preview'; f.referrerPolicy = 'no-referrer-when-downgrade'; pv.appendChild(f); }
-    else pv.textContent = ta.value.trim() ? 'This isn\'t a Google Maps embed code' : 'No map embed';
+  practiceList.addEventListener('input', event => {
+    if (event.target.matches('input[name$="[location]"]')) {
+      updateMap(event.target.closest('.practice-item'));
+    }
+  });
+  practiceList.addEventListener('click', event => {
+    const remove = event.target.closest('.remove-practice');
+    if (!remove) return;
+    remove.closest('.practice-item').remove();
+    practiceList.querySelectorAll('.practice-item').forEach((item, index) => {
+      item.querySelector('[data-practice-number]').textContent = index + 1;
+    });
+    mark();
+  });
+  addPractice.addEventListener('click', () => {
+    const item = practiceTemplate.content.firstElementChild.cloneNode(true);
+    item.innerHTML = item.innerHTML.replaceAll('__INDEX__', String(nextPractice++));
+    item.querySelector('[data-practice-number]').textContent = practiceList.querySelectorAll('.practice-item').length + 1;
+    practiceList.appendChild(item);
+    mark();
+    item.querySelector('input').focus();
   });
 })();
 </script>
