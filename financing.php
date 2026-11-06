@@ -43,7 +43,7 @@ send_page_headers();
       <div class="nav-item">
         <a href="index.php#results">Results</a>
         <div class="subnav">
-          <a href="index.php#reviews">Testimonials</a>
+          <a href="testimonials.php">Testimonials</a>
           <a href="gallery.php">Gallery</a>
         </div>
       </div>
@@ -71,7 +71,7 @@ send_page_headers();
     <div class="drawer-group">
       <a href="index.php#results">Results</a>
       <div class="drawer-subnav">
-        <a href="index.php#reviews">Testimonials</a>
+        <a href="testimonials.php">Testimonials</a>
         <a href="gallery.php">Gallery</a>
       </div>
     </div>
@@ -199,7 +199,7 @@ send_page_headers();
 <footer>
   <div class="wrap ftr">
     <a class="logo" href="index.php" aria-label="Back to top"><img src="Uploads/2026/logo.webp" alt="<?= e(s('office_name')) ?>" width="250" height="169"></a>
-    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
+    <nav aria-label="Footer"><a href="financing.php">Financing</a><a href="testimonials.php">Testimonials</a><a href="#top">Disclaimer</a><a href="#top">Privacy Policy</a></nav>
     <span>© Copyright 2026</span>
   </div>
 </footer>
